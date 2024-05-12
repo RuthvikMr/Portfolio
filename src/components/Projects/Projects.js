@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import MRW from "../../Assets/Projects/mrw.png";
+import MrPortfolio from "../../Assets/Projects/mr-portfolio.png";
+import teamMaker from "../../Assets/Projects/teamMaker.png";
 
 function Projects() {
   return (
@@ -24,18 +21,18 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={MRW}
               title="MR Wallet"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="An offline app for storing personal information employs encryption techniques and utilizes a password-protected key. It also includes 2-factor authentication, including biometric authentication, and utilizes the Android multi-dex library, along with activity animations."
               demoLink="https://play.google.com/store/apps/details?id=com.ruthvik.wallet&pcampaignid=web_share"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              imgPath={teamMaker}
+              title="Cricket Team Maker"
+              description="A team developing Java mobile applications. Have divided the teams into halves using Java's built-in randomness methods."
               demoLink="https://play.google.com/store/apps/details?id=com.ruthvik.cricketteamselection&pcampaignid=web_share"
             />
           </Col>
@@ -44,10 +41,9 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              title="MR Wallet"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              demoLink="https://play.google.com/store/apps/details?id=com.ruthvik.wallet&pcampaignid=web_share"
+              imgPath={MrPortfolio}
+              title="Portfolio"
+              description="A portfolio website which is built using react js and firebase. Have a sections to present the employee details like Bio, Projects, Skills, Resume"
             />
           </Col>
         </Row>

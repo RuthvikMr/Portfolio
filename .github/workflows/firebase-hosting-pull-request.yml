@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm install -g firebase-tools
-      - run: echo $FIREBASE_SERVICE_ACCOUNT_MR_PORTFOLIO_51874 > /tmp/firebase_service_account.json && firebase login --no-localhost --service-account /tmp/firebase_service_account.json
-      - run: firebase deploy --token "$FIREBASE_TOKEN" --project "mr-portfolio-51874"
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
