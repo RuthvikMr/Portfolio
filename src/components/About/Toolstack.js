@@ -8,24 +8,31 @@ import {
   SiWindows11,
 } from "react-icons/si";
 
-function Toolstack() {
+function Toolstack(props) {
+  const { toolStack }= props;
+  const getIcons = (name) =>{
+    switch (name.toLowerCase()) {
+      case "windows":
+        return <SiWindows11 />;
+      case "vscode":
+        return <SiVisualstudiocode />
+      case "postman":
+        return <SiPostman />;
+      case "git":
+        return <DiGit />;
+      case "firebase":
+        return <SiFirebase />;
+      default:
+        return <SiVisualstudiocode />
+    }
+  }
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiWindows11 />
+      {toolStack && toolStack.map((data,key)=>(
+      <Col xs={4} md={2} className="tech-icons" key={key}>
+        {getIcons(data.name)}
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
+      ))}
     </Row>
   );
 }

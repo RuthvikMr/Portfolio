@@ -10,25 +10,31 @@ import {
   SiAngular,
 } from "react-icons/si";
 
-function Techstack() {
+function Techstack(props) {
+  const { techStack } = props;
+  const getIcons = (name) =>{
+    switch (name.toLowerCase()) {
+      case "js":
+        return <DiJavascript1 />;
+      case "angular":
+        return <SiAngular />
+      case "react":
+        return <DiReact />;
+      case "mongo":
+        return <DiMongodb />;
+      case "node":
+        return <DiNodejs />;
+      default:
+        return <DiJavascript1 />
+    }
+  }
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-   
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAngular/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
+     {techStack && techStack.map((data,key)=>(
+       <Col xs={4} md={2} className="tech-icons" key={key}>
+        {getIcons(data.name)}
+     </Col>
+     ))}
     </Row>
   );
 }

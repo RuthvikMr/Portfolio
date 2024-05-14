@@ -9,7 +9,22 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Footer() {
+function Footer(props) {
+  const { name, contact} = props;
+  const getIcons = ( name ) =>{
+    switch (name.toLowerCase()) {
+      case "instagram":
+        return <AiFillInstagram />;
+      case "twitter":
+        return <AiOutlineTwitter />;
+      case "linkedin":
+        return <FaLinkedinIn />;
+      case "github":
+        return <AiFillGithub />
+      default :
+      return <AiFillGithub/>;
+    }
+  }
   const [currentDate, setCurrentDate] = useState('');
   const navigate = useNavigate();
   const routeTo = () =>{
@@ -30,20 +45,23 @@ function Footer() {
           <h3>Last Updated: {currentDate}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Developed: Ruthvik M R</h3>
+          <h3>Developed: {name}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/RuthvikMr"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
+            {contact && contact.map((data,key)=>(
+               <li className="social-icons" key={key}>
+               <a
+                 href={data.link}
+                 style={{ color: "white" }}
+                 target="_blank" 
+                 rel="noopener noreferrer"
+               >
+                {getIcons(data.name)}
+               </a>
+             </li>
+            ))}
+           
             <li className="social-icons">
               <a
                 href="https://twitter.com/RuthvikMR1/"
@@ -51,7 +69,6 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
@@ -61,7 +78,6 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
               </a>
             </li>
             <li className="social-icons">
@@ -71,7 +87,6 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
               </a>
             </li>
           </ul>
