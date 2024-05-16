@@ -18,6 +18,14 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.ant-float-btn-icon{
+  color: white !important;
+}
+
+.ant-float-btn-body{
+  background: var(--imp-text-color) !important;
+}
+
 button:focus {
   box-shadow: none !important;
 }

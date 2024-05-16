@@ -5,7 +5,8 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 
-function Home() {
+function Home(props) {
+  const { name,passing_message }= props;
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -21,12 +22,12 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> RUTHVIK M R</strong>
+                I'M {' '}
+                <strong className="main-name" style={{textTransform:"uppercase"}}>{name}</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <Type typeWriter={passing_message} />
               </div>
             </Col>
 
