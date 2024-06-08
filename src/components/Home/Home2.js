@@ -9,7 +9,22 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
+function Home2(props) {
+  const { contact} = props;
+  const getIcons = ( name ) =>{
+    switch (name.toLowerCase()) {
+      case "instagram":
+        return <AiFillInstagram />;
+      case "twitter":
+        return <AiOutlineTwitter />;
+      case "linkedin":
+        return <FaLinkedinIn />;
+      case "github":
+        return <AiFillGithub />
+      default :
+      return <AiFillGithub/>;
+    }
+  }
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -60,7 +75,19 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons">
+            {contact && contact.map((data,key)=>(
+               <li className="social-icons" key={key}>
+               <a
+                 href={data.link}
+                 style={{ color: "white" }}
+                 target="_blank" 
+                 rel="noopener noreferrer"
+               >
+                {getIcons(data.name)}
+               </a>
+             </li>
+            ))}
+              {/* <li className="social-icons">
                 <a
                   href="https://github.com/RuthvikMr"
                   target="_blank"
@@ -99,7 +126,7 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

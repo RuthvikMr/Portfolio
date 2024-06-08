@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import User from "./Assets/json/ruthvik.json";
 import {
   BrowserRouter as Router,
   Route,
@@ -35,13 +36,30 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={
+          <Home
+            name={User.user_bio.full_name}
+            passing_message={User.user_bio.passing_message}
+            contact={User.user_bio.contact}
+          />} />
           <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About
+          tools={User.tools}
+          skills={User.skills}
+          name={User.user_bio.full_name}
+          address={User.user_bio.address}
+          designation={User.user_bio.designation}
+          company={User.user_bio.company}
+          qualification={User.user_bio.qualification}
+          college={User.user_bio.college_name}
+          hobby={User.user_bio.hobby}
+          />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
+        <Footer 
+        name={User.user_bio.full_name} 
+        contact={User.user_bio.contact} />
       </div>
     </Router>
   );
