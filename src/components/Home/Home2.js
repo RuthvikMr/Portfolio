@@ -34,7 +34,7 @@ function Home2(props) {
               A BRIEF<span className="purple"> INTRODUCTION </span>ABOUT MYSELF
             </h1>
             <p className="home-about-body">
-              Software engineer with 2.5 years of experience.
+              Software engineer with 2 years of experience.
               <br/>
               Passionate to work on technically challening projects
               <br />
