@@ -10,7 +10,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2(props) {
-  const { contact} = props;
+  const { contact, workExp} = props;
   const getIcons = ( name ) =>{
     switch (name.toLowerCase()) {
       case "instagram":
@@ -34,7 +34,7 @@ function Home2(props) {
               A BRIEF<span className="purple"> INTRODUCTION </span>ABOUT MYSELF
             </h1>
             <p className="home-about-body">
-              Software engineer with 2 years of experience.
+              Software engineer with {workExp} years of experience.
               <br/>
               Passionate to work on technically challening projects
               <br />
@@ -87,46 +87,6 @@ function Home2(props) {
                </a>
              </li>
             ))}
-              {/* <li className="social-icons">
-                <a
-                  href="https://github.com/RuthvikMr"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/RuthvikMR1/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/RuthvikMr/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/ruthvikmr417/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
             </ul>
           </Col>
         </Row>

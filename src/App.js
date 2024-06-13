@@ -41,6 +41,7 @@ function App() {
             name={User.user_bio.full_name}
             passing_message={User.user_bio.passing_message}
             contact={User.user_bio.contact}
+            workExp={User.user_bio.yearOfExperience}
           />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About

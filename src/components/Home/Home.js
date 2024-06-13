@@ -6,7 +6,7 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home(props) {
-  const { name,passing_message,contact }= props;
+  const { name,passing_message,contact,workExp }= props;
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -42,7 +42,7 @@ function Home(props) {
           </Row>
         </Container>
       </Container>
-      <Home2 contact={contact}/>
+      <Home2 contact={contact} workExp={workExp}/>
     </section>
   );
 }
