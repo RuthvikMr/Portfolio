@@ -289,7 +289,10 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: coral;
+}
+.highlight-text {
+  color: coral;
 }
 
 .Typewriter__wrapper {
