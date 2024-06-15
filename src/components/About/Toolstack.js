@@ -30,7 +30,8 @@ function Toolstack(props) {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {toolStack && toolStack.map((data,key)=>(
       <Col xs={4} md={2} className="tech-icons" key={key}>
-        {getIcons(data.name)}
+        {getIcons(data.name)}<br/>
+        <h5>{data.name}</h5>
       </Col>
       ))}
     </Row>
