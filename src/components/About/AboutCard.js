@@ -9,8 +9,8 @@ function AboutCard(props) {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple"> {name} </span>
-            from <span className="purple">{address}</span>
+            Hi Everyone, I am <span className="highlight-text"> {name} </span>
+            from {address}
             <br />
             I am currently working as a {designation} at {company}.
             <br />

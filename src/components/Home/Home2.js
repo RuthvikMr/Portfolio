@@ -40,25 +40,25 @@ function Home2(props) {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Applications and Products </b> and
+                <b className="highlight-text">Web Applications and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
+                <b className="highlight-text">
                   Devops.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing <b className="purple">Mobile Applications </b>
+              Whenever possible, I also apply my passion for developing <b className="highlight-text">Mobile Applications </b>
               with
               <i>
-                <b className="purple">
+                <b className="highlight-text">
                   {" "}
                   Modern Javascript Library and Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Ionic</b>
+                <b className="highlight-text"> React.js and Ionic</b>
               </i>
             </p>
           </Col>

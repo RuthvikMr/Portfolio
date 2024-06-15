@@ -1,7 +1,7 @@
 {
     "user_bio": {
         "full_name": "Ruthvik M R",
-        "address":"Mysuru , India.",
+        "address":"Mysuru, India.",
         "designation":"Software Engineer",
         "company":"Knowledge Lens: A Rockwell Automation Company",
         "education":"Master of Computer Application (MCA)",
@@ -13,8 +13,7 @@
         ],
         "passing_message": [
             "{ Front End Developer }",
-            "MERN Stack Developer",
-            "With 2 +1 years of Experience",
+            "With 2 +1 years of experience",
             "At Knowledge Lens"
         ],
         "yearOfExperience":"2 +1",
@@ -39,36 +38,37 @@
     },
     "skills":[
         {
-            "name":"js"
+            "name":"Javascript"
         },
         {
-            "name":"angular"
+            "name":"Angular"
         },
         {
-            "name":"react"
+            "name":"React"
         },
         {
-            "name":"mongo"
+            "name":"Mongo"
         },
         {
-            "name":"node"
+            "name":"Node"
         }
     ],
     "tools":[
         {
-            "name":"windows"
+            "name":"Windows"
         },
         {
-            "name":"vscode"
+            "name":"VS Code"
         },
         {
-            "name":"postman"
+            "name":"Postman"
         },
         {
-            "name":"git"
+            "name":"Git"
         },
         {
-            "name":"firebase"
+            "name":"Firebase"
         }
-    ]
+    ],
+    "resumeLink":"https://drive.google.com/file/d/1lkWI7Va_4YveH2zAi-STh-Psx7NBRsvB/view"
 }

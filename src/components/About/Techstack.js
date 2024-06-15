@@ -14,7 +14,7 @@ function Techstack(props) {
   const { techStack } = props;
   const getIcons = (name) =>{
     switch (name.toLowerCase()) {
-      case "js":
+      case "Javascript":
         return <DiJavascript1 />;
       case "angular":
         return <SiAngular />
@@ -33,6 +33,8 @@ function Techstack(props) {
      {techStack && techStack.map((data,key)=>(
        <Col xs={4} md={2} className="tech-icons" key={key}>
         {getIcons(data.name)}
+        <br/>
+       <h5>{data.name}</h5>
      </Col>
      ))}
     </Row>

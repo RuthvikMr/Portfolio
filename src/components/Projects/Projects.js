@@ -17,7 +17,7 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <strong className="purple"> Mobile Development </strong>
+        <strong className="highlight-text"> Mobile Development </strong>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -37,13 +37,13 @@ function Projects() {
             />
           </Col>
         </Row>
-        <strong className="purple"> Web Development </strong>
+        <strong className="highlight-text"> Web Development </strong>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={MrPortfolio}
               title="Portfolio"
-              description="A portfolio website which is built using react js and firebase. Have a sections to present the employee details like Bio, Projects, Skills, Resume"
+              description="A Json driven portfolio website which is built using react js and firebase. It has a sections to present the user details like Bio, Projects, Skills, Resume with one single json file."
             />
           </Col>
         </Row>
