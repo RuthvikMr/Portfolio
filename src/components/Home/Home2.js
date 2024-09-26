@@ -10,7 +10,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2(props) {
-  const { contact} = props;
+  const { contact, workExp} = props;
   const getIcons = ( name ) =>{
     switch (name.toLowerCase()) {
       case "instagram":
@@ -34,31 +34,31 @@ function Home2(props) {
               A BRIEF<span className="purple"> INTRODUCTION </span>ABOUT MYSELF
             </h1>
             <p className="home-about-body">
-              Software engineer with 2.5 years of experience.
+              Software engineer with {workExp} years of experience.
               <br/>
               Passionate to work on technically challening projects
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Applications and Products </b> and
+                <b className="highlight-text">Web Applications and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
+                <b className="highlight-text">
                   Devops.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing <b className="purple">Mobile Applications </b>
+              Whenever possible, I also apply my passion for developing <b className="highlight-text">Mobile Applications </b>
               with
               <i>
-                <b className="purple">
+                <b className="highlight-text">
                   {" "}
                   Modern Javascript Library and Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Ionic</b>
+                <b className="highlight-text"> React.js and Ionic</b>
               </i>
             </p>
           </Col>
@@ -87,46 +87,6 @@ function Home2(props) {
                </a>
              </li>
             ))}
-              {/* <li className="social-icons">
-                <a
-                  href="https://github.com/RuthvikMr"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/RuthvikMR1/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/RuthvikMr/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/ruthvikmr417/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
             </ul>
           </Col>
         </Row>
