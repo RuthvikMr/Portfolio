@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import News from "./components/NewsAI/News";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -56,6 +57,7 @@ function App() {
           hobby={User.user_bio.hobby}
           />} />
           <Route path="/resume" element={<Resume file={User.resumeLink} />} />
+          <Route path="/news" element={<News/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer 
