@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
 import { ListNews } from "./ListNews";
-import MRW from "../../Assets/Projects/mrw.png";
 
 function News() {
     return (
