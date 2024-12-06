@@ -790,9 +790,6 @@ button:focus {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
-.fork-btn-inner::after {
-  display: none !important;
-}
 
 /* News */
 .news-section {
@@ -867,4 +864,7 @@ button:focus {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+#tsparticles {
+  pointer-events: none;
 }
