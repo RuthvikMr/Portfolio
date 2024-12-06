@@ -40,6 +40,7 @@ export function ListNews() {
     };
 
     // Initial fetch on component mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         getNewsList();
     }, [0]);
