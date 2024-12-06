@@ -3,16 +3,17 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { TbLanguageHiragana } from "react-icons/tb";
+import { HiFlag } from "react-icons/hi2";
+import  languageJson  from '../Assets/json/languages.json'
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 import { FaRegNewspaper } from "react-icons/fa";
+import { Dropdown } from "react-bootstrap";
 
 
 function NavBar() {
@@ -93,8 +94,33 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-            
+
             <Nav.Item className="fork-btn">
+              <Dropdown>
+                <Dropdown.Toggle className="fork-btn-inner" id="dropdown-basic">
+                <TbLanguageHiragana />
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  { languageJson && languageJson.map((lang,key) => (
+                  <Dropdown.Item key={key}>
+                    {lang.active ? (
+                      <HiFlag />
+                    ):(
+                      <>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      </>
+                    )}
+                   &nbsp;&nbsp;
+                  {lang.name}
+                    </Dropdown.Item>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            </Nav.Item>
+            
+            {/* GitHub Portfolio Repo Link */}
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/RuthvikMr/Portfolio"
                 target="_blank"
@@ -104,7 +130,8 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
-          </Nav>
+            */}
+          </Nav> 
         </Navbar.Collapse>
       </Container>
     </Navbar>

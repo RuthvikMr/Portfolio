@@ -1,17 +1,32 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { useTranslation } from 'react-i18next';
 
 function About(props) {
   const { tools,skills,name,address, designation,company ,qualification,college,hobby } = props;
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng); // Change language dynamically
+  };
   return (
     <Container fluid className="about-section">
       <Particle />
       <Container>
+        <Button
+          variant="primary"
+          onClick={() => changeLanguage('en') } // Fetch next page
+        >English</Button>
+        <Button
+          variant="primary"
+          onClick={() => changeLanguage('fr') } // Fetch next page
+        >Français</Button>
+             <h1>{t('welcome')}</h1>
+      <p>{t('greeting', { name: 'John' })}</p>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}

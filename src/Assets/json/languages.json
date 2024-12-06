@@ -1,0 +1,26 @@
+[
+    {
+        "name":"English",
+        "active":true
+    },
+    {
+        "name":"Kannada",
+        "active":false
+    },
+    {
+        "name":"Hindi",
+        "active":false
+    },
+    {
+        "name":"Telugu",
+        "active":false
+    },
+    {
+        "name":"Malyalam",
+        "active":false
+    },
+    {
+        "name":"Tamil",
+        "active":false
+    }
+]
