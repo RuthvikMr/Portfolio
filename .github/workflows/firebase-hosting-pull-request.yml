@@ -13,12 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set CI environment variable
-        env:
-          CI: ${{ secrets.CI }}
-        run: echo "CI is set to $CI"
-
       - name: Install dependencies and build
         run: npm ci --legacy-peer-deps && CI=false npm run build
 
