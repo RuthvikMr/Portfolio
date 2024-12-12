@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import { TbLanguageHiragana } from "react-icons/tb";
-import { HiFlag } from "react-icons/hi2";
+import Form from 'react-bootstrap/Form';
 import  languageJson  from '../Assets/json/languages.json'
 import {
   AiOutlineHome,
@@ -19,6 +19,12 @@ import { Dropdown } from "react-bootstrap";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [selectedLang, setSelectedLang] = useState(null);
+
+  const handleChange = (lang) => {
+    setSelectedLang(lang);
+    updateLanguage(lang);
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -29,6 +35,14 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const updateLanguage = (event) => {
+    try {
+      console.log("EVENT NAV BAR",event);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return (
     <Navbar
@@ -103,16 +117,18 @@ function NavBar() {
 
                 <Dropdown.Menu>
                   { languageJson && languageJson.map((lang,key) => (
-                  <Dropdown.Item key={key}>
-                    {lang.active ? (
-                      <HiFlag />
-                    ):(
-                      <>
-                      &nbsp;&nbsp;&nbsp;&nbsp;
-                      </>
-                    )}
-                   &nbsp;&nbsp;
-                  {lang.name}
+                  <Dropdown.Item key={key} as="div">
+                      <Form.Check
+                        type="radio"
+
+                        label={lang.name}
+                        checked={selectedLang?.name === lang.name}
+                        onChange={()=> handleChange(lang)}
+                        onClick={(event) => 
+                          event.stopPropagation()
+                        }
+                        id={`language-${lang}`}
+                      />
                     </Dropdown.Item>
                   ))}
                 </Dropdown.Menu>

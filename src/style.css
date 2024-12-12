@@ -868,3 +868,10 @@ button:focus {
 #tsparticles {
   pointer-events: none;
 }
+
+/* Custom radio button css */
+/* Custom styles for radio buttons */
+.form-check-input:checked{
+  background-color: var(--imp-text-color) !important;
+  border-color: var(--imp-text-color) !important;;
+}
