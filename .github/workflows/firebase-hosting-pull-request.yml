@@ -13,11 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - env:
-        CI: ${{ secrets.CI }} 
-      - run: echo "CI is set to $CI"
-      - run: npm ci --legacy-peer-deps && CI=false npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+
+      - name: Set CI environment variable
+        env:
+          CI: ${{ secrets.CI }}
+        run: echo "CI is set to $CI"
+
+      - name: Install dependencies and build
+        run: npm ci --legacy-peer-deps && CI=false npm run build
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MR_PORTFOLIO_51874 }}
