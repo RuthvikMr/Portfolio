@@ -1,0 +1,19 @@
+{
+    "navbar": {
+      "home": "ഹോം",
+      "about": "കുറിച്ച്",
+      "projects": "പ്രോജക്റ്റുകൾ",
+      "news": "വാർത്ത"
+    },
+    "homePage": {
+      "introMessage1": "ഹലോ!",
+      "introMessage2": "ഞാൻ",
+      "introMessage3": "എന്നെക്കുറിച്ച് <purple style='color: purple'>ചെറിയ പരിചയം</purple>"
+    },
+    "messages": {
+      "findMeOn": "എന്നെ കണ്ടെത്തുക",
+      "feelFreeMsg": "എന്നെ <purple style='color: purple'>ബന്ധപ്പെടാൻ</purple> മടിക്കരുത്"
+    },
+    "welcomeMessage": "ഞങ്ങളുടെ വെബ്‌സൈറ്റിലേക്കു സ്വാഗതം!"
+  }
+  

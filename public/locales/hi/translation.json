@@ -1,0 +1,19 @@
+{
+    "navbar": {
+      "home": "होम",
+      "about": "के बारे में",
+      "projects": "परियोजनाएँ",
+      "news": "समाचार"
+    },
+    "homePage": {
+      "introMessage1": "नमस्ते!",
+      "introMessage2": "मैं",
+      "introMessage3": "मेरे बारे में <purple style='color: purple'>संक्षिप्त परिचय</purple>"
+    },
+    "messages": {
+      "findMeOn": "मुझे यहां खोजें",
+      "feelFreeMsg": "मुझसे <purple style='color: purple'>जुड़ने</purple> के लिए स्वतंत्र महसूस करें"
+    },
+    "welcomeMessage": "हमारी वेबसाइट पर आपका स्वागत है!"
+  }
+  

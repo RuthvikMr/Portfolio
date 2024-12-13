@@ -1,0 +1,19 @@
+{
+    "navbar": {
+      "home": "హోమ్",
+      "about": "గురించి",
+      "projects": "ప్రాజెక్టులు",
+      "news": "వార్తలు"
+    },
+    "homePage": {
+      "introMessage1": "హలో!",
+      "introMessage2": "నేను",
+      "introMessage3": "నా గురించి <purple style='color: purple'>సంగ్రహ పరిచయం</purple>"
+    },
+    "messages": {
+      "findMeOn": "నన్ను వెతకండి",
+      "feelFreeMsg": "నాతో <purple style='color: purple'>కలవడానికి</purple> సంకోచించకండి"
+    },
+    "welcomeMessage": "మా వెబ్‌సైట్‌కు స్వాగతం!"
+  }
+  
