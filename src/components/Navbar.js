@@ -1,23 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { TbLanguageHiragana } from "react-icons/tb";
+import Form from 'react-bootstrap/Form';
+import  languageJson  from '../Assets/json/languages.json'
+import { useTranslation } from 'react-i18next';
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 import { FaRegNewspaper } from "react-icons/fa";
+import { Dropdown } from "react-bootstrap";
 
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [selectedLang, setSelectedLang] = useState(null);
+  const { t, i18n } = useTranslation();
+
+  const handleChange = (lang) => {
+    localStorage.setItem('language',JSON.stringify(lang))
+    setSelectedLang(lang);
+    updateLanguage(lang);
+  };
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language') || languageJson[0];
+    if(typeof savedLanguage === 'string') {
+      setSelectedLang(JSON.parse(savedLanguage))
+    } else {
+      setSelectedLang(savedLanguage);
+    }
+}, []);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -28,6 +47,14 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const updateLanguage = (event) => {
+    try {
+      i18n.changeLanguage(event.value);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return (
     <Navbar
@@ -54,7 +81,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
               </Nav.Link>
             </Nav.Item>
 
@@ -67,7 +94,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t('navbar.projects')}
               </Nav.Link>
             </Nav.Item>
 
@@ -80,7 +107,7 @@ function NavBar() {
                 <FaRegNewspaper
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                News
+                {t('navbar.news')}
               </Nav.Link>
             </Nav.Item>
 
@@ -90,11 +117,37 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.about')}
               </Nav.Link>
             </Nav.Item>
-            
+
             <Nav.Item className="fork-btn">
+              <Dropdown>
+                <Dropdown.Toggle className="fork-btn-inner" id="dropdown-basic">
+                <TbLanguageHiragana />
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  { languageJson && languageJson.map((lang,key) => (
+                  <Dropdown.Item key={key} as="div">
+                      <Form.Check
+                        type="radio"
+                        label={lang.name}
+                        checked={selectedLang?.value === lang.value}
+                        onChange={()=> handleChange(lang)}
+                        onClick={(event) => 
+                          event.stopPropagation()
+                        }
+                        id={`language-${lang}`}
+                      />
+                    </Dropdown.Item>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            </Nav.Item>
+            
+            {/* GitHub Portfolio Repo Link */}
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/RuthvikMr/Portfolio"
                 target="_blank"
@@ -104,7 +157,8 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
-          </Nav>
+            */}
+          </Nav> 
         </Navbar.Collapse>
       </Container>
     </Navbar>

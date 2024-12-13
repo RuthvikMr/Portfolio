@@ -1,0 +1,26 @@
+[
+    {
+        "name":"English",
+        "value": "en" 
+    },
+    {
+        "name":"Kannada",
+        "value": "ka"
+    },
+    {
+        "name":"Hindi",
+        "value": "hi"
+    },
+    {
+        "name":"Telugu",
+        "value": "te"
+    },
+    {
+        "name":"Malyalam",
+        "value": "ma"
+    },
+    {
+        "name":"Tamil",
+        "value": "ta"
+    }
+]

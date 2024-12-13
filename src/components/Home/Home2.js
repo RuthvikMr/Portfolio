@@ -8,9 +8,11 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Home2(props) {
   const { contact, workExp} = props;
+  const { t } = useTranslation();
   const getIcons = ( name ) =>{
     switch (name.toLowerCase()) {
       case "instagram":
@@ -30,9 +32,12 @@ function Home2(props) {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              A BRIEF<span className="purple"> INTRODUCTION </span>ABOUT MYSELF
-            </h1>
+            <h1 style={{ fontSize: "2.6em" }}
+             dangerouslySetInnerHTML={{
+              __html: t("homePage.introMessage3", {
+                purple: (chunk) => `<span className="purple">${chunk}</span>`,
+              }),
+            }}></h1>
             <p className="home-about-body">
               Software engineer with {workExp} years of experience.
               <br/>
@@ -70,9 +75,13 @@ function Home2(props) {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
+            <h1>{t('messages.findMeOn')}</h1>
+            <p dangerouslySetInnerHTML={{
+              __html: t("messages.feelFreeMsg", {
+                purple: (chunk) => `<span className="purple">${chunk}</span>`,
+              }),
+            }}>
+              {/* Feel free to <span className="purple">connect </span>with me */}
             </p>
             <ul className="home-about-social-links">
             {contact && contact.map((data,key)=>(

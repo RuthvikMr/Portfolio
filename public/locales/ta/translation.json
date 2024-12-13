@@ -1,0 +1,19 @@
+{
+    "navbar": {
+      "home": "முகப்பு",
+      "about": "பற்றி",
+      "projects": "திட்டங்கள்",
+      "news": "செய்தி"
+    },
+    "homePage": {
+      "introMessage1": "வணக்கம்!",
+      "introMessage2": "நான்",
+      "introMessage3": "என்னைப் பற்றி <purple style='color: purple'>சுருக்கமாக அறிமுகம்</purple>"
+    },
+    "messages": {
+      "findMeOn": "என்னை காணுங்கள்",
+      "feelFreeMsg": "என்னை <purple style='color: purple'>தொடர்புகொள்ள</purple> தயங்க வேண்டாம்"
+    },
+    "welcomeMessage": "எங்கள் வலைதளத்திற்கு வரவேற்கிறோம்!"
+  }
+  
