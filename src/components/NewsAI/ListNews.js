@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { DateFormatter } from '../../Util/lib';
+import { DateFormatter } from '../../Util/shared/DateFormatter';
 import { config } from '../../Util/config';
 import { Col, Image, Row } from "react-bootstrap";
 import Placeholder from 'react-bootstrap/Placeholder';
@@ -39,8 +39,6 @@ export function ListNews() {
         }
     };
 
-    // Initial fetch on component mount
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         getNewsList();
     }, [0]);

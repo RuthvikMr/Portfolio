@@ -1,0 +1,19 @@
+{
+    "navbar": {
+      "home": "ಮನೆ",
+      "about": "ಬಗ್ಗೆ",
+      "projects": "ಪ್ರಾಜೆಕ್ಟ್ಸ್",
+      "news": "ಸುದ್ದಿ"
+    },
+    "homePage": {
+      "introMessage1": "ಹಲೋ!",
+      "introMessage2": "ನಾನು",
+      "introMessage3": "ನನ್ನ ಬಗ್ಗೆ <purple style='color: purple'>ಸಣ್ಣ ಪರಿಚಯ</purple>"
+    },
+    "messages": {
+      "findMeOn": "ನನ್ನನ್ನು ಹುಡುಕಿ",
+      "feelFreeMsg": "<purple style='color: purple'>ಸಂಪರ್ಕಿಸಲು</purple> ಮುಕ್ತವಾಗಿರಿ"
+    },
+    "welcomeMessage": "ನಮ್ಮ ವೆಬ್ಸೈಟ್‌ಗೆ ಸ್ವಾಗತ!"
+  }
+  

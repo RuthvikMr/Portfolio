@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { TbLanguageHiragana } from "react-icons/tb";
 import Form from 'react-bootstrap/Form';
 import  languageJson  from '../Assets/json/languages.json'
+import { useTranslation } from 'react-i18next';
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -20,11 +21,22 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null);
+  const { t, i18n } = useTranslation();
 
   const handleChange = (lang) => {
+    localStorage.setItem('language',JSON.stringify(lang))
     setSelectedLang(lang);
     updateLanguage(lang);
   };
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language') || languageJson[0];
+    if(typeof savedLanguage === 'string') {
+      setSelectedLang(JSON.parse(savedLanguage))
+    } else {
+      setSelectedLang(savedLanguage);
+    }
+}, []);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -38,7 +50,7 @@ function NavBar() {
 
   const updateLanguage = (event) => {
     try {
-      console.log("EVENT NAV BAR",event);
+      i18n.changeLanguage(event.value);
     } catch (error) {
       console.error(error);
     }
@@ -69,7 +81,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
               </Nav.Link>
             </Nav.Item>
 
@@ -82,7 +94,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t('navbar.projects')}
               </Nav.Link>
             </Nav.Item>
 
@@ -95,7 +107,7 @@ function NavBar() {
                 <FaRegNewspaper
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                News
+                {t('navbar.news')}
               </Nav.Link>
             </Nav.Item>
 
@@ -105,7 +117,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.about')}
               </Nav.Link>
             </Nav.Item>
 
@@ -120,9 +132,8 @@ function NavBar() {
                   <Dropdown.Item key={key} as="div">
                       <Form.Check
                         type="radio"
-
                         label={lang.name}
-                        checked={selectedLang?.name === lang.name}
+                        checked={selectedLang?.value === lang.value}
                         onChange={()=> handleChange(lang)}
                         onClick={(event) => 
                           event.stopPropagation()

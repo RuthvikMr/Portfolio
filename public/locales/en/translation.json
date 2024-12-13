@@ -1,4 +1,18 @@
 {
-    "welcome": "Welcome",
-    "greeting": "Hello, {{name}}!"
-  }
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "news": "News"
+  },
+  "homePage":{
+    "introMessage1":"Hello There!",
+    "introMessage2":"I'm",
+    "introMessage3":"A BRIEF <purple style='color: purple'> INTRODUCTION </purple> ABOUT MYSELF"
+  },
+  "messages":{
+    "findMeOn":"FIND ME ON",
+    "feelFreeMsg":"Feel free to <purple style='color: purple'>connect </purple> with me"
+  },
+  "welcomeMessage": "Welcome to our website!"
+}

@@ -1,26 +1,26 @@
 [
     {
         "name":"English",
-        "active":true
+        "value": "en" 
     },
     {
         "name":"Kannada",
-        "active":false
+        "value": "ka"
     },
     {
         "name":"Hindi",
-        "active":false
+        "value": "hi"
     },
     {
         "name":"Telugu",
-        "active":false
+        "value": "te"
     },
     {
         "name":"Malyalam",
-        "active":false
+        "value": "ma"
     },
     {
         "name":"Tamil",
-        "active":false
+        "value": "ta"
     }
 ]
