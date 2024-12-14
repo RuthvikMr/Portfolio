@@ -5,17 +5,25 @@ import Particle from "../Particle";
 import MRW from "../../Assets/Projects/mrw.png";
 import MrPortfolio from "../../Assets/Projects/mr-portfolio.png";
 import teamMaker from "../../Assets/Projects/teamMaker.png";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+        <h1 className="project-heading"
+        dangerouslySetInnerHTML={{
+              __html: t("projects.heading1", {
+                purple: (chunk) => `<span className="purple">${chunk}</span>`,
+              }),
+            }}>
+          {/* My Recent <strong className="purple">Works </strong> */}
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          {t('projects.heading2')}
         </p>
         <strong className="highlight-text"> Mobile Development </strong>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

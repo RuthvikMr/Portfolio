@@ -6,11 +6,13 @@ import pdf from "../../Assets/../Assets/Ruthvik_MR.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { useTranslation } from "react-i18next";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew(props) {
   const [width, setWidth] = useState(1200);
   const { file } = props;
+  const { t } = useTranslation();
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -39,7 +41,7 @@ function ResumeNew(props) {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t('messages.downloadCV')}
           </Button>
         </Row>
       </Container>
