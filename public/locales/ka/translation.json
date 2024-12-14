@@ -1,18 +1,35 @@
 {
     "navbar": {
-      "home": "ಮನೆ",
-      "about": "ಬಗ್ಗೆ",
+      "home": "ಮುಖಪುಟ",
+      "about": "ನನ್ನ ಬಗ್ಗೆ",
       "projects": "ಪ್ರಾಜೆಕ್ಟ್ಸ್",
-      "news": "ಸುದ್ದಿ"
+      "news": "ಸುದ್ದಿಗಳು"
     },
     "homePage": {
-      "introMessage1": "ಹಲೋ!",
+      "introMessage1": "ಹಲೋ!",
       "introMessage2": "ನಾನು",
-      "introMessage3": "ನನ್ನ ಬಗ್ಗೆ <purple style='color: purple'>ಸಣ್ಣ ಪರಿಚಯ</purple>"
+      "introMessage3": "ನನ್ನ ಬಗ್ಗೆ ಒಂದು <strong style='color: purple'>ಸಣ್ಣ ಪರಿಚಯ</strong>"
     },
     "messages": {
-      "findMeOn": "ನನ್ನನ್ನು ಹುಡುಕಿ",
-      "feelFreeMsg": "<purple style='color: purple'>ಸಂಪರ್ಕಿಸಲು</purple> ಮುಕ್ತವಾಗಿರಿ"
+      "findMeOn": "ನನ್ನ ಸಂಪರ್ಕಿಸಿ",
+      "feelFreeMsg": "ನನ್ನೊಂದಿಗೆ <strong style='color: purple'>ಸಂಪರ್ಕಿಸಿ</strong>",
+      "noNewsAvailable": "ಸುದ್ದಿಗಳು ಲಭ್ಯವಿಲ್ಲ",
+      "loading": "ಲೋಡಿಂಗ್...",
+      "showMore": "ಇನ್ನಷ್ಟು ತೋರಿಸಿ",
+      "demo": "ಪ್ರದರ್ಶನ",
+      "downloadCV": "CV ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+    },
+    "news": {
+      "heading1": "ಟೆಕ್ <strong style='color:purple'>ಸುದ್ದಿಗಳು</strong>"
+    },
+    "projects": {
+      "heading1": "ನನ್ನ ಇತ್ತೀಚಿನ <strong style='color:purple'>ಕೃತಿಗಳು</strong>",
+      "heading2": "ನಾನು ಇತ್ತೀಚೆಗೆ ಮಾಡಿದ ಕೆಲವು ಪ್ರಾಜೆಕ್ಟ್ಸ್ ಇಲ್ಲಿವೆ."
+    },
+    "about": {
+      "heading1": "<strong style='color:purple'>ನನ್ನ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ</strong>",
+      "heading2": "ವೈಯಕ್ತಿಕ <strong style='color:purple'>ಹುಣರಗಳು</strong>",
+      "heading3": "<strong style='color:purple'>ಉಪಕರಣಗಳು</strong> ನಾನು ಬಳಸುತ್ತೇನೆ"
     },
     "welcomeMessage": "ನಮ್ಮ ವೆಬ್ಸೈಟ್‌ಗೆ ಸ್ವಾಗತ!"
   }

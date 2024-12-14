@@ -5,9 +5,11 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { useTranslation } from "react-i18next";
 
 function About(props) {
   const { tools,skills,name,address, designation,company ,qualification,college,hobby } = props;
+  const { t } = useTranslation();
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -21,8 +23,11 @@ function About(props) {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know About <strong className="purple">Me</strong>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}
+             dangerouslySetInnerHTML={{
+              __html: t("about.heading1"),
+            }}>
+              {/* Know About <strong className="purple">Me</strong> */}
             </h1>
             <Aboutcard
             name={name}
@@ -42,14 +47,20 @@ function About(props) {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+        <h1 className="project-heading"
+          dangerouslySetInnerHTML={{
+            __html: t("about.heading2"),
+          }}>
+          {/* Professional <strong className="purple">Skillset </strong> */}
         </h1>
 
         <Techstack techStack={skills} />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+        <h1 className="project-heading"
+         dangerouslySetInnerHTML={{
+          __html: t("about.heading3"),
+        }}>
+          {/* <strong className="purple">Tools</strong> I use */}
         </h1>
         <Toolstack toolStack={tools}/>
 

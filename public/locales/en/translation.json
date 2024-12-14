@@ -8,11 +8,28 @@
   "homePage":{
     "introMessage1":"Hello There!",
     "introMessage2":"I'm",
-    "introMessage3":"A BRIEF <purple style='color: purple'> INTRODUCTION </purple> ABOUT MYSELF"
+    "introMessage3":"A BRIEF <strong style='color: purple'> INTRODUCTION </strong> ABOUT MYSELF"
   },
   "messages":{
     "findMeOn":"FIND ME ON",
-    "feelFreeMsg":"Feel free to <purple style='color: purple'>connect </purple> with me"
+    "feelFreeMsg":"Feel free to <strong style='color: purple'>connect </strong> with me",
+    "noNewsAvailable":"No news available",
+    "loading":"Loading...",
+    "showMore":"Show More",
+    "demo":"Demo",
+    "downloadCV":"Download CV"
+  },
+  "news":{
+    "heading1":"Tech <strong style='color:purple'> News</strong>"
+  },
+  "projects":{
+    "heading1":"My Recent <strong style='color:purple'>Works </strong>",
+    "heading2":"Here are a few projects I've worked on recently."
+  },
+  "about":{
+    "heading1":"Know About <strong style='color:purple'>Me</strong>",
+    "heading2":"Professional <strong style='color:purple'>Skillset </strong>",
+    "heading3":"<strong style='color:purple'>Tools</strong> I use"
   },
   "welcomeMessage": "Welcome to our website!"
 }
