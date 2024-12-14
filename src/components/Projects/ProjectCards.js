@@ -2,8 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
+import { useTranslation } from "react-i18next";
 
 function ProjectCards(props) {
+  const { t } = useTranslation();
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -25,7 +27,7 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {t('messages.demo')}
           </Button>
         )}
       </Card.Body>

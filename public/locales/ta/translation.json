@@ -1,19 +1,36 @@
 {
     "navbar": {
       "home": "முகப்பு",
-      "about": "பற்றி",
+      "about": "என்னை பற்றி",
       "projects": "திட்டங்கள்",
-      "news": "செய்தி"
+      "news": "செய்திகள்"
     },
     "homePage": {
       "introMessage1": "வணக்கம்!",
       "introMessage2": "நான்",
-      "introMessage3": "என்னைப் பற்றி <purple style='color: purple'>சுருக்கமாக அறிமுகம்</purple>"
+      "introMessage3": "என்னைப் பற்றி ஒரு <strong style='color: purple'>சிறு அறிமுகம்</strong>"
     },
     "messages": {
-      "findMeOn": "என்னை காணுங்கள்",
-      "feelFreeMsg": "என்னை <purple style='color: purple'>தொடர்புகொள்ள</purple> தயங்க வேண்டாம்"
+      "findMeOn": "என்னை தொடர்பு கொள்ளவும்",
+      "feelFreeMsg": "<strong style='color: purple'>என்னை தொடர்பு கொள்ள</strong> தயங்க வேண்டாம்",
+      "noNewsAvailable": "செய்திகள் இல்லை",
+      "loading": "தயாராகிறது...",
+      "showMore": "மேலும் காண்க",
+      "demo": "டெமோ",
+      "downloadCV": "சிவி பதிவிறக்கவும்"
     },
-    "welcomeMessage": "எங்கள் வலைதளத்திற்கு வரவேற்கிறோம்!"
+    "news": {
+      "heading1": "தொழில்நுட்ப <strong style='color:purple'>செய்திகள்</strong>"
+    },
+    "projects": {
+      "heading1": "என் சமீபத்திய <strong style='color:purple'>வேலைகள்</strong>",
+      "heading2": "நான் சமீபத்தில் செய்த சில திட்டங்கள் இவை."
+    },
+    "about": {
+      "heading1": "<strong style='color:purple'>என்னை பற்றி அறிக</strong>",
+      "heading2": "தொழில்முறை <strong style='color:purple'>நிறுவனங்கள்</strong>",
+      "heading3": "<strong style='color:purple'>கருவிகள்</strong> நான் பயன்படுத்துகிறேன்"
+    },
+    "welcomeMessage": "எங்கள் இணையதளத்திற்கு வரவேற்கிறோம்!"
   }
   

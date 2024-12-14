@@ -5,11 +5,13 @@ import { Col, Image, Row } from "react-bootstrap";
 import Placeholder from 'react-bootstrap/Placeholder';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
+import { useTranslation } from "react-i18next";
 
 export function ListNews() {
     const [page, setPage] = useState(1);
     const [newsData, setNewsData] = useState([]);
     const [loader, setLoader] = useState(false);
+    const { t } = useTranslation();
 
     // Function to fetch news
     const getNewsList = async (nextPage = false) => {
@@ -70,10 +72,12 @@ export function ListNews() {
                                         role="status"
                                         aria-hidden="true"
                                     />
-                                    &nbsp; Loading...
+                                    &nbsp; {t('messages.loading')}
                                 </>
                             ) : (
-                                "Show More"
+                                <>
+                                {t('messages.showMore')}
+                                </>
                             )}
                         </Button>
                     </Col>
@@ -81,7 +85,7 @@ export function ListNews() {
             ) : (
                 loader ? (
                     <Col xs={12} style={{ textAlign: "center" }}>
-                        <h5>Loading...!</h5>
+                        <h5 className="purple">{t('messages.loading')}</h5>
                         <Placeholder animation="glow">
                             <Placeholder xs={6} />
                             <Placeholder xs={8} />
@@ -90,7 +94,7 @@ export function ListNews() {
                     </Col>
                 ) : (
                     <Col xs={12} style={{ textAlign: "center" }}>
-                        <h5>No news available.</h5>
+                        <h5>{t('messages.noNewsAvailable')}</h5>
                     </Col>
                 )
             )}
