@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+/* Dropdown Open Animation */
+.dropdown-menu {
+  opacity: 0 !important;
+  transform: translateY(-10px) !important;
+  transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.dropdown-menu.show-animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

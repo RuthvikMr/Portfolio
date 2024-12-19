@@ -8,7 +8,16 @@
     "homePage": {
       "introMessage1": "வணக்கம்!",
       "introMessage2": "நான்",
-      "introMessage3": "என்னைப் பற்றி ஒரு <strong style='color: purple'>சிறு அறிமுகம்</strong>"
+      "introMessage3": "என்னைப் பற்றி ஒரு <strong style='color: purple'>சிறு அறிமுகம்</strong>",
+      "email": "மின்னஞ்சல்",
+      "name": "முழு பெயர்",
+      "message": "செய்தி",
+      "ConnectWithMe": "<strong style='color: purple'>என்னை தொடர்பு கொள்ளவும்</strong>",
+      "placeholder": {
+        "p1": "முழு பெயர்",
+        "p2": "மின்னஞ்சல் முகவரி",
+        "p3": "உங்கள் செய்தியை எழுதவும்"
+      }
     },
     "messages": {
       "findMeOn": "என்னை தொடர்பு கொள்ளவும்",
@@ -17,7 +26,9 @@
       "loading": "தயாராகிறது...",
       "showMore": "மேலும் காண்க",
       "demo": "டெமோ",
-      "downloadCV": "சிவி பதிவிறக்கவும்"
+      "downloadCV": "சிவி பதிவிறக்கவும்",
+      "contactMe": "என்னை தொடர்பு கொள்ளவும்",
+      "submit": "சமர்ப்பிக்கவும்"
     },
     "news": {
       "heading1": "தொழில்நுட்ப <strong style='color:purple'>செய்திகள்</strong>"

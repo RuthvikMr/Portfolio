@@ -21,12 +21,14 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null);
+  const [isOpen,setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
   const handleChange = (lang) => {
     localStorage.setItem('language',JSON.stringify(lang))
     setSelectedLang(lang);
     updateLanguage(lang);
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -122,26 +124,30 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <Dropdown>
+              <Dropdown
+                show={isOpen}
+                onToggle={(isOpen) => setIsOpen(isOpen)}
+              >
                 <Dropdown.Toggle className="fork-btn-inner" id="dropdown-basic">
-                <TbLanguageHiragana />
+                  <TbLanguageHiragana />
                 </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  { languageJson && languageJson.map((lang,key) => (
-                  <Dropdown.Item key={key} as="div">
-                      <Form.Check
-                        type="radio"
-                        label={lang.name}
-                        checked={selectedLang?.value === lang.value}
-                        onChange={()=> handleChange(lang)}
-                        onClick={(event) => 
-                          event.stopPropagation()
-                        }
-                        id={`language-${lang}`}
-                      />
-                    </Dropdown.Item>
-                  ))}
+                <Dropdown.Menu className={`dropdown-menu ${isOpen ? "show-animate" : ""}`}>
+                  {languageJson &&
+                    languageJson.map((lang, key) => (
+                      <Dropdown.Item
+                        key={key}
+                        as="div"
+                      >
+                        <Form.Check
+                          type="radio"
+                          label={lang.name}
+                          onChange={() => handleChange(lang)}
+                          checked={selectedLang?.value === lang.value}
+                          id={`language-${lang}`}
+                        />
+                      </Dropdown.Item>
+                    ))}
                 </Dropdown.Menu>
               </Dropdown>
             </Nav.Item>
