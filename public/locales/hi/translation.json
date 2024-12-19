@@ -8,7 +8,16 @@
     "homePage": {
       "introMessage1": "नमस्ते!",
       "introMessage2": "मैं",
-      "introMessage3": "मेरे बारे में एक <strong style='color: purple'>संक्षिप्त परिचय</strong>"
+      "introMessage3": "मेरे बारे में एक <strong style='color: purple'>संक्षिप्त परिचय</strong>",
+      "email": "ईमेल",
+      "name": "पूरा नाम",
+      "message": "संदेश",
+      "ConnectWithMe": "<strong style='color: purple'>मुझसे संपर्क करें</strong>",
+      "placeholder": {
+        "p1": "पूरा नाम",
+        "p2": "ईमेल पता",
+        "p3": "अपना संदेश लिखें"
+      }
     },
     "messages": {
       "findMeOn": "मुझसे संपर्क करें",
@@ -17,7 +26,9 @@
       "loading": "लोड हो रहा है...",
       "showMore": "और दिखाओ",
       "demo": "डेमो",
-      "downloadCV": "सीवी डाउनलोड करें"
+      "downloadCV": "सीवी डाउनलोड करें",
+      "contactMe": "मुझसे संपर्क करें",
+      "submit": "जमा करें"
     },
     "news": {
       "heading1": "तकनीकी <strong style='color:purple'>समाचार</strong>"

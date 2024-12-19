@@ -50,7 +50,7 @@ export function ListNews() {
             {!loader && newsData?.length > 0 ? (
                 <>
                     {newsData.map((data, key) => (
-                        <Col xs={4} md={3} className="news-icons" key={key}>
+                        <Col md={3} className="news-icons" key={key}>
                             <Image src={data?.urlToImage} fluid />
                             <br />
                             <DateFormatter dateString={data?.publishedAt} />

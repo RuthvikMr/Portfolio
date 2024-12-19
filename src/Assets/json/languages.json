@@ -8,6 +8,10 @@
         "value": "ka"
     },
     {
+        "name":"Sanskrit",
+        "value":"sa"
+    },
+    {
         "name":"Hindi",
         "value": "hi"
     },
@@ -16,11 +20,11 @@
         "value": "te"
     },
     {
-        "name":"Malyalam",
-        "value": "ma"
-    },
-    {
         "name":"Tamil",
         "value": "ta"
+    },
+    {
+        "name":"Malyalam",
+        "value": "ma"
     }
 ]

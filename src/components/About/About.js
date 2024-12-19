@@ -6,6 +6,7 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import { useTranslation } from "react-i18next";
+import { Bounce, Zoom } from "react-awesome-reveal";
 
 function About(props) {
   const { tools,skills,name,address, designation,company ,qualification,college,hobby } = props;
@@ -23,21 +24,25 @@ function About(props) {
               paddingBottom: "50px",
             }}
           >
+            <Zoom triggerOnce='true'>
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}
              dangerouslySetInnerHTML={{
               __html: t("about.heading1"),
             }}>
               {/* Know About <strong className="purple">Me</strong> */}
             </h1>
+            </Zoom>
+            <Bounce triggerOnce='true' delay={1000}>
             <Aboutcard
             name={name}
             address={address}
             designation={designation}
             company={company}
-            educaton={qualification}
+            qualification={qualification}
             college={college}
             hobby={hobby}
             />
+            </Bounce>
           </Col>
           <Col
             md={5}
@@ -47,21 +52,27 @@ function About(props) {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+
+        <Zoom triggerOnce='true'>
         <h1 className="project-heading"
           dangerouslySetInnerHTML={{
             __html: t("about.heading2"),
           }}>
           {/* Professional <strong className="purple">Skillset </strong> */}
         </h1>
+        </Zoom>
 
         <Techstack techStack={skills} />
 
+        <Zoom triggerOnce='true'>
         <h1 className="project-heading"
          dangerouslySetInnerHTML={{
           __html: t("about.heading3"),
         }}>
           {/* <strong className="purple">Tools</strong> I use */}
         </h1>
+        </Zoom>
+
         <Toolstack toolStack={tools}/>
 
       </Container>

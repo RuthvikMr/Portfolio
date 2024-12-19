@@ -6,6 +6,7 @@ import MRW from "../../Assets/Projects/mrw.png";
 import MrPortfolio from "../../Assets/Projects/mr-portfolio.png";
 import teamMaker from "../../Assets/Projects/teamMaker.png";
 import { useTranslation } from "react-i18next";
+import { Zoom } from "react-awesome-reveal";
 
 function Projects() {
   const { t } = useTranslation();
@@ -14,17 +15,19 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
+      <Zoom triggerOnce='true'>   
         <h1 className="project-heading"
         dangerouslySetInnerHTML={{
-              __html: t("projects.heading1", {
-                purple: (chunk) => `<span className="purple">${chunk}</span>`,
-              }),
+              __html: t("projects.heading1"),
             }}>
           {/* My Recent <strong className="purple">Works </strong> */}
         </h1>
+      </Zoom>
+      <Zoom triggerOnce='true' delay={1000}>
         <p style={{ color: "white" }}>
           {t('projects.heading2')}
         </p>
+      </Zoom>
         <strong className="highlight-text"> Mobile Development </strong>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
