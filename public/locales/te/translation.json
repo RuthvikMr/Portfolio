@@ -1,36 +1,46 @@
 {
-    "navbar": {
-      "home": "హోమ్",
-      "about": "నా గురించి",
-      "projects": "ప్రాజెక్టులు",
-      "news": "వార్తలు"
-    },
-    "homePage": {
-      "introMessage1": "హలో!",
-      "introMessage2": "నేను",
-      "introMessage3": "నా గురించి ఒక <strong style='color: purple'>చిన్న పరిచయం</strong>"
-    },
-    "messages": {
-      "findMeOn": "నన్ను కనుగొనండి",
-      "feelFreeMsg": "<strong style='color: purple'>నన్ను సంప్రదించడానికి</strong> సంకోచించవద్దు",
-      "noNewsAvailable": "వార్తలు లేవు",
-      "loading": "లోడ్ అవుతోంది...",
-      "showMore": "మరింత చూపించు",
-      "demo": "డెమో",
-      "downloadCV": "సీవీ డౌన్లోడ్ చేయండి"
-    },
-    "news": {
-      "heading1": "టెక్ <strong style='color:purple'>వార్తలు</strong>"
-    },
-    "projects": {
-      "heading1": "నా తాజా <strong style='color:purple'>కార్యాలు</strong>",
-      "heading2": "ఇది నేను ఇటీవల చేసిన కొన్ని ప్రాజెక్టులు."
-    },
-    "about": {
-      "heading1": "<strong style='color:purple'>నా గురించి</strong> తెలుసుకోండి",
-      "heading2": "వృత్తిపరమైన <strong style='color:purple'>నైపుణ్యాలు</strong>",
-      "heading3": "<strong style='color:purple'>పరికరాలు</strong> నేను ఉపయోగిస్తాను"
-    },
-    "welcomeMessage": "మా వెబ్‌సైట్‌కి స్వ!"
+  "navbar": {
+    "home": "హోమ్",
+    "about": "నా గురించి",
+    "projects": "ప్రాజెక్టులు",
+    "news": "వార్తలు"
+  },
+  "homePage": {
+    "introMessage1": "హలో!",
+    "introMessage2": "నేను",
+    "introMessage3": "నా గురించి ఒక <strong style='color: purple'>చిన్న పరిచయం</strong>",
+    "email": "ఇమెయిల్",
+    "name": "పూర్తి పేరు",
+    "message": "సందేశం",
+    "ConnectWithMe": "<strong style='color: purple'>నన్ను సంప్రదించండి</strong>",
+    "placeholder": {
+      "p1": "పూర్తి పేరు",
+      "p2": "ఇమెయిల్ చిరునామా",
+      "p3": "మీ సందేశాన్ని రాయండి"
+    }
+  },
+  "messages": {
+    "findMeOn": "నన్ను కనుగొనండి",
+    "feelFreeMsg": "<strong style='color: purple'>నన్ను సంప్రదించడానికి</strong> సంకోచించవద్దు",
+    "noNewsAvailable": "వార్తలు లేవు",
+    "loading": "లోడ్ అవుతోంది...",
+    "showMore": "మరింత చూపించు",
+    "demo": "డెమో",
+    "downloadCV": "సీవీ డౌన్లోడ్ చేయండి",
+    "contactMe": "నన్ను సంప్రదించండి",
+    "submit": "సమర్పించండి"
+  },
+  "news": {
+    "heading1": "టెక్ <strong style='color:purple'>వార్తలు</strong>"
+  },
+  "projects": {
+    "heading1": "నా తాజా <strong style='color:purple'>కార్యాలు</strong>",
+    "heading2": "ఇది నేను ఇటీవల చేసిన కొన్ని ప్రాజెక్టులు."
+  },
+  "about": {
+    "heading1": "<strong style='color:purple'>నా గురించి</strong> తెలుసుకోండి",
+    "heading2": "వృత్తిపరమైన <strong style='color:purple'>నైపుణ్యాలు</strong>",
+    "heading3": "<strong style='color:purple'>పరికరాలు</strong> నేను ఉపయోగిస్తాను"
+  },
+  "welcomeMessage": "మా వెబ్‌సైట్‌కి స్వ!"
 }
-  

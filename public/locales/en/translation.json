@@ -8,7 +8,16 @@
   "homePage":{
     "introMessage1":"Hello There!",
     "introMessage2":"I'm",
-    "introMessage3":"A BRIEF <strong style='color: purple'> INTRODUCTION </strong> ABOUT MYSELF"
+    "introMessage3":"A BRIEF <strong style='color: purple'> INTRODUCTION </strong> ABOUT MYSELF",
+    "email":"Email",
+    "name":"Full Name",
+    "message":"Message",
+    "ConnectWithMe":"CONNECT WITH <strong style='color: purple'>ME</strong>",
+    "placeholder":{
+      "p1":"Full Name",
+      "p2":"Email Address",
+      "p3":"Write your message"
+    }
   },
   "messages":{
     "findMeOn":"FIND ME ON",
@@ -17,7 +26,9 @@
     "loading":"Loading...",
     "showMore":"Show More",
     "demo":"Demo",
-    "downloadCV":"Download CV"
+    "downloadCV":"Download CV",
+    "contactMe":"Contact me",
+    "submit":"Submit"
   },
   "news":{
     "heading1":"Tech <strong style='color:purple'> News</strong>"

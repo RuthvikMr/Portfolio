@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
+import contactSvg from "../../Assets/contact.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -9,6 +10,8 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { Zoom } from "react-awesome-reveal";
+import Contact from "../Contact/Contact";
 
 function Home2(props) {
   const { contact, workExp} = props;
@@ -31,13 +34,18 @@ function Home2(props) {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
+        <Col md={4} className="myAvtar">
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
           <Col md={8} className="home-about-description">
+            <Zoom triggerOnce='true'>
             <h1 style={{ fontSize: "2.6em" }}
              dangerouslySetInnerHTML={{
-              __html: t("homePage.introMessage3", {
-                purple: (chunk) => `<span className="purple">${chunk}</span>`,
-              }),
+              __html: t("homePage.introMessage3"),
             }}></h1>
+            </Zoom>
             <p className="home-about-body">
               Software engineer with {workExp} years of experience.
               <br/>
@@ -67,22 +75,22 @@ function Home2(props) {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
-            <h1>{t('messages.findMeOn')}</h1>
+          <Col md={4} className="home-about-social">
+          <Zoom triggerOnce='true'>
+            <h1 dangerouslySetInnerHTML={{
+              __html: t("homePage.ConnectWithMe"),
+            }}></h1>
+            </Zoom>
+            <Zoom triggerOnce='true' delay={1000}>
             <p dangerouslySetInnerHTML={{
-              __html: t("messages.feelFreeMsg", {
-                purple: (chunk) => `<span className="purple">${chunk}</span>`,
-              }),
+              __html: t("messages.feelFreeMsg"),
             }}>
               {/* Feel free to <span className="purple">connect </span>with me */}
             </p>
+            </Zoom>
+            <Contact/>
             <ul className="home-about-social-links">
             {contact && contact.map((data,key)=>(
                <li className="social-icons" key={key}>
@@ -97,6 +105,9 @@ function Home2(props) {
              </li>
             ))}
             </ul>
+          </Col>
+          <Col md={8} className="home-about-description">
+              <img src={contactSvg} className="img-fluid" style={{width:'60%'}} alt="avatar" />
           </Col>
         </Row>
       </Container>

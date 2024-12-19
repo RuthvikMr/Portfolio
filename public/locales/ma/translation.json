@@ -1,36 +1,46 @@
 {
-    "navbar": {
-      "home": "ഹോം",
-      "about": "എന്നെ കുറിച്ച്",
-      "projects": "പ്രോജക്ടുകൾ",
-      "news": "വാർത്തകൾ"
-    },
-    "homePage": {
-      "introMessage1": "ഹലോ!",
-      "introMessage2": "ഞാൻ",
-      "introMessage3": "എന്നെ കുറിച്ചുള്ള ഒരു <strong style='color: purple'>ചെറിയ പരിചയം</strong>"
-    },
-    "messages": {
-      "findMeOn": "എന്നെ കണ്ടെത്തുക",
-      "feelFreeMsg": "<strong style='color: purple'>എന്നെ ബന്ധപ്പെടാൻ</strong> മടിക്കേണ്ട",
-      "noNewsAvailable": "വാർത്തകൾ ലഭ്യമല്ല",
-      "loading": "ലോഡിംഗ്...",
-      "showMore": "കൂടുതൽ കാണിക്കുക",
-      "demo": "പ്രദർശനം",
-      "downloadCV": "സിവി ഡൗൺലോഡ് ചെയ്യുക"
-    },
-    "news": {
-      "heading1": "ടെക്ക് <strong style='color:purple'>വാർത്തകൾ</strong>"
-    },
-    "projects": {
-      "heading1": "എന്റെ ഏറ്റവും പുതിയ <strong style='color:purple'>പ്രവർത്തനങ്ങൾ</strong>",
-      "heading2": "ഞാൻ അടുത്തിടെ ചെയ്ത ചില പ്രോജക്ടുകൾ."
-    },
-    "about": {
-      "heading1": "<strong style='color:purple'>എന്നെ കുറിച്ച്</strong> അറിയുക",
-      "heading2": "പ്രൊഫഷണൽ <strong style='color:purple'>നൈപുണ്യങ്ങൾ</strong>",
-      "heading3": "<strong style='color:purple'>ഉപകരണങ്ങൾ</strong> ഞാൻ ഉപയോഗിക്കുന്നു"
-    },
-    "welcomeMessage": "ഞങ്ങളുടെ വെബ്സൈറ്റിലേക്ക് സ്വാഗതം!"
-  }
-  
+  "navbar": {
+    "home": "ഹോം",
+    "about": "എന്നെ കുറിച്ച്",
+    "projects": "പ്രോജക്ടുകൾ",
+    "news": "വാർത്തകൾ"
+  },
+  "homePage": {
+    "introMessage1": "ഹലോ!",
+    "introMessage2": "ഞാൻ",
+    "introMessage3": "എന്നെ കുറിച്ചുള്ള ഒരു <strong style='color: purple'>ചെറിയ പരിചയം</strong>",
+    "email": "ഇമെയിൽ",
+    "name": "പൂർണ്ണ പേര്",
+    "message": "സന്ദേശം",
+    "ConnectWithMe": "<strong style='color: purple'>എന്നെ ബന്ധപ്പെടുക</strong>",
+    "placeholder": {
+      "p1": "പൂർണ്ണ പേര്",
+      "p2": "ഇമെയിൽ വിലാസം",
+      "p3": "നിങ്ങളുടെ സന്ദേശം എഴുതുക"
+    }
+  },
+  "messages": {
+    "findMeOn": "എന്നെ കണ്ടെത്തുക",
+    "feelFreeMsg": "<strong style='color: purple'>എന്നെ ബന്ധപ്പെടാൻ</strong> മടിക്കേണ്ട",
+    "noNewsAvailable": "വാർത്തകൾ ലഭ്യമല്ല",
+    "loading": "ലോഡിംഗ്...",
+    "showMore": "കൂടുതൽ കാണിക്കുക",
+    "demo": "പ്രദർശനം",
+    "downloadCV": "സിവി ഡൗൺലോഡ് ചെയ്യുക",
+    "contactMe": "എന്നെ ബന്ധപ്പെടുക",
+    "submit": "സമർപ്പിക്കുക"
+  },
+  "news": {
+    "heading1": "ടെക്ക് <strong style='color:purple'>വാർത്തകൾ</strong>"
+  },
+  "projects": {
+    "heading1": "എന്റെ ഏറ്റവും പുതിയ <strong style='color:purple'>പ്രവർത്തനങ്ങൾ</strong>",
+    "heading2": "ഞാൻ അടുത്തിടെ ചെയ്ത ചില പ്രോജക്ടുകൾ."
+  },
+  "about": {
+    "heading1": "<strong style='color:purple'>എന്നെ കുറിച്ച്</strong> അറിയുക",
+    "heading2": "പ്രൊഫഷണൽ <strong style='color:purple'>നൈപുണ്യങ്ങൾ</strong>",
+    "heading3": "<strong style='color:purple'>ഉപകരണങ്ങൾ</strong> ഞാൻ ഉപയോഗിക്കുന്നു"
+  },
+  "welcomeMessage": "ഞങ്ങളുടെ വെബ്സൈറ്റിലേക്ക് സ്വാഗതം!"
+}

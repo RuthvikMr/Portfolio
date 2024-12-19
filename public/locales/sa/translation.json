@@ -1,0 +1,47 @@
+{
+    "navbar": {
+      "home": "गृहं",
+      "about": "सम्बन्धः",
+      "projects": "परियोजनाः",
+      "news": "वार्ताः"
+    },
+    "homePage": {
+      "introMessage1": "नमस्ते!",
+      "introMessage2": "अहम्",
+      "introMessage3": "मम <strong style='color: purple'>संक्षिप्त </strong>परिचयः",
+      "email": "विद्युतपत्रः",
+      "name": "पूर्णनाम",
+      "message": "सन्देशः",
+      "ConnectWithMe": "<strong style='color: purple'>मया </strong>संपर्कं कुर्वन्तु",
+      "placeholder": {
+        "p1": "पूर्णनाम",
+        "p2": "विद्युतपत्रं लेखः",
+        "p3": "भवतः सन्देशं लिखतु"
+      }
+    },
+    "messages": {
+      "findMeOn": "मां अत्र अन्विष्यन्तु",
+      "feelFreeMsg": "<strong style='color: purple'>मया </strong>संपर्कं कुर्वन्तु",
+      "noNewsAvailable": "कोऽपि वार्ता न उपलब्धा",
+      "loading": "लोड् कुर्वन्ति...",
+      "showMore": "अधिकं दर्शयतु",
+      "demo": "प्रदर्शनम्",
+      "downloadCV": "जीवचरित्रं डाउनलोड् कुरुत",
+      "contactMe": "मया संपर्कं कुरुत",
+      "submit": "प्रेषयतु"
+    },
+    "news": {
+      "heading1": "तन्त्रज्ञानस्य <strong style='color:purple'> वार्ताः </strong>"
+    },
+    "projects": {
+      "heading1": "मम <strong style='color:purple'>नूतनाः</strong> कृतयः",
+      "heading2": "अद्यतनानि परियोजनानि अत्र सन्ति।"
+    },
+    "about": {
+      "heading1": "मम <strong style='color:purple'>परिचयं </strong>जानन्तु",
+      "heading2": "व्यावसायिकः <strong style='color:purple'>कौशलः </strong>",
+      "heading3": "अहं उपयुज्यमानाः <strong style='color:purple'>उपकरणानि </strong>"
+    },
+    "welcomeMessage": "अस्माकं जालपृष्ठे स्वागतं!"
+  }
+  
