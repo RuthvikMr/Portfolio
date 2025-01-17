@@ -35,15 +35,11 @@ const IFrameComponent = () => {
         <>
             {!loader ? (
                 <>
-                    <div style={{ width: "100%", height: "75vh", marginTop: "100px", border: "none" }} >
+                    <div className="guideSection">
                         <iframe
                             src={url}
                             title="Embedded Page"
-                            style={{
-                                width: "50%",
-                                height: "100%",
-                                border: "none",
-                            }}
+                            className="iFramePage"
                         ></iframe>
                     </div>
                 </>
