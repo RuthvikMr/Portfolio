@@ -202,7 +202,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: coral;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -320,11 +320,16 @@ button:focus {
   justify-content: center !important;
   padding-top: 9em !important;
 }
+.myAnimeAvtar{
+  justify-content: center !important;
+  padding-top: 4em !important;
+}
 
 @media (max-width: 767px) {
-  .myAvtar {
+  .myAvtar , .myAnimeAvtar{
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+     
   }
 }
 

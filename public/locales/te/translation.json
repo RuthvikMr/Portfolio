@@ -3,7 +3,8 @@
     "home": "హోమ్",
     "about": "నా గురించి",
     "projects": "ప్రాజెక్టులు",
-    "news": "వార్తలు"
+    "news": "వార్తలు",
+    "guide":"గైడ్"
   },
   "homePage": {
     "introMessage1": "హలో!",

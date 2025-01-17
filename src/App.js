@@ -18,6 +18,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import News from "./components/NewsAI/News";
+import IFrameComponent from "./components/Guide/Guide";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -58,6 +59,7 @@ function App() {
           />} />
           <Route path="/resume" element={<Resume file={User.resumeLink} />} />
           <Route path="/news" element={<News/>} />
+          <Route path="/guide" element={<IFrameComponent/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer 

@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "news": "News"
+    "news": "News",
+    "guide":"Guide"
   },
   "homePage":{
     "introMessage1":"Hello There!",
