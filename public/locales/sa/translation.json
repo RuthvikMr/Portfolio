@@ -3,7 +3,8 @@
       "home": "गृहं",
       "about": "सम्बन्धः",
       "projects": "परियोजनाः",
-      "news": "वार्ताः"
+      "news": "वार्ताः",
+      "guide":"मार्गदर्शकः"
     },
     "homePage": {
       "introMessage1": "नमस्ते!",

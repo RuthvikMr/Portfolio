@@ -70,6 +70,16 @@
             "name":"Firebase"
         }
     ],
-    "resumeLink":"https://drive.google.com/file/d/19pasZQu0eojUny8akwT0vTH6Q_CVDQkJ/view"
+    "resumeLink":"https://drive.google.com/file/d/19pasZQu0eojUny8akwT0vTH6Q_CVDQkJ/view",
+    "iframe":[
+        {
+            "label":"Read Me",
+            "url":"https://github.com/RuthvikMr/FE_interview_preparation/blob/main/README.md"
+        },
+        {
+            "label":"Code Snippet",
+            "url":"https://github.com/RuthvikMr/FE_interview_preparation/blob/main/CodeME.md" 
+        }
+    ]
     
 }
