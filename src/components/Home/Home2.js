@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import homeLogo from "../../Assets/home-main.svg";
 import contactSvg from "../../Assets/contact.svg";
-import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -11,6 +10,8 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Zoom } from "react-awesome-reveal";
+import Tilt from "react-parallax-tilt";
+
 import Contact from "../Contact/Contact";
 
 function Home2(props) {
@@ -35,9 +36,9 @@ function Home2(props) {
       <Container>
         <Row>
         <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Tilt>
+              <img src={homeLogo} className="img-fluid" alt="home pic" />
+          </Tilt>
           </Col>
           <Col md={8} className="home-about-description">
             <Zoom triggerOnce='true'>

@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import { TbLanguageHiragana } from "react-icons/tb";
+import { BiBookReader } from "react-icons/bi";
 import Form from 'react-bootstrap/Form';
 import  languageJson  from '../Assets/json/languages.json'
 import { useTranslation } from 'react-i18next';
@@ -110,6 +111,16 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 {t('navbar.news')}
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/guide"
+                onClick={() => updateExpanded(false)}
+              >
+                <BiBookReader style={{ marginBottom: "2px" }} /> {t('navbar.guide')}
               </Nav.Link>
             </Nav.Item>
 

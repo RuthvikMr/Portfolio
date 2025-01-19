@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import myImg from "../../Assets/avatar.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import { useTranslation } from "react-i18next";
+import Tilt from "react-parallax-tilt";
 
 function Home(props) {
   const { name,passing_message,contact,workExp }= props;
@@ -33,13 +34,15 @@ function Home(props) {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Col md={5} style={{ paddingBottom: 20 }} className="myAnimeAvtar">
+              <Tilt className="d-flex justify-content-center">
+                <img
+                  src={myImg}
+                  alt="Avatar pic"
+                  className="img-fluid"
+                  style={{ maxHeight: "450px" }}
+                />
+              </Tilt>
             </Col>
           </Row>
         </Container>
