@@ -59,7 +59,7 @@ function App() {
           />} />
           <Route path="/resume" element={<Resume file={User.resumeLink} />} />
           <Route path="/news" element={<News/>} />
-          <Route path="/guide" element={<IFrameComponent/>} />
+          <Route path="/guide" element={<IFrameComponent iframe={User.iframe}/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer 

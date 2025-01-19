@@ -1,15 +1,11 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.582),
+      rgba(12, 8, 24, 0.904));
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
+  --image-gradient: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863));
 
   --imp-text-color: #c770f0;
 }
@@ -18,11 +14,11 @@ html {
   color: var(--imp-text-color) !important;
 }
 
-.ant-float-btn-icon{
+.ant-float-btn-icon {
   color: white !important;
 }
 
-.ant-float-btn-body{
+.ant-float-btn-body {
   background: var(--imp-text-color) !important;
 }
 
@@ -154,10 +150,12 @@ button:focus {
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -217,10 +215,14 @@ button:focus {
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -228,28 +230,38 @@ button:focus {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -291,6 +303,7 @@ button:focus {
 .main-name {
   color: coral;
 }
+
 .highlight-text {
   color: coral;
 }
@@ -300,6 +313,7 @@ button:focus {
   color: #be6adf !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #b562d6 !important;
@@ -311,6 +325,7 @@ button:focus {
     font-weight: 500 !important;
     position: absolute !important;
   }
+
   .Typewriter__cursor {
     display: none !important;
   }
@@ -320,16 +335,19 @@ button:focus {
   justify-content: center !important;
   padding-top: 9em !important;
 }
-.myAnimeAvtar{
+
+.myAnimeAvtar {
   justify-content: center !important;
   padding-top: 4em !important;
 }
 
 @media (max-width: 767px) {
-  .myAvtar , .myAnimeAvtar{
+
+  .myAvtar,
+  .myAnimeAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
-     
+
   }
 }
 
@@ -421,8 +439,9 @@ button:focus {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -448,6 +467,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -457,6 +477,7 @@ button:focus {
 .blockquote-footer {
   color: #a588c0 !important;
 }
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -483,6 +504,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -543,10 +565,12 @@ button:focus {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
@@ -589,14 +613,12 @@ button:focus {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(
-    from 0deg,
-    rgba(0, 128, 255, 0.6),
-    rgba(0, 255, 128, 0.6),
-    rgba(255, 128, 0, 0.6),
-    rgba(255, 0, 128, 0.6),
-    rgba(0, 128, 255, 0.6)
-  );
+  background: conic-gradient(from 0deg,
+      rgba(0, 128, 255, 0.6),
+      rgba(0, 255, 128, 0.6),
+      rgba(255, 128, 0, 0.6),
+      rgba(255, 0, 128, 0.6),
+      rgba(0, 128, 255, 0.6));
   z-index: -1;
   animation: rotateBorder 2s linear infinite;
   border-radius: 50%;
@@ -617,6 +639,7 @@ button:focus {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -633,6 +656,7 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -655,6 +679,7 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -692,6 +717,7 @@ button:focus {
     padding-left: 15px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -768,10 +794,12 @@ button:focus {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -805,7 +833,7 @@ button:focus {
   color: white !important;
 }
 
-.news-icons{
+.news-icons {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
@@ -819,6 +847,7 @@ button:focus {
   position: relative;
   transition: border-color 0.3s ease-in-out;
 }
+
 .news-icons::before {
   content: '';
   position: absolute;
@@ -826,14 +855,12 @@ button:focus {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(
-    from 0deg,
-    rgba(0, 128, 255, 0.6),
-    rgba(0, 255, 128, 0.6),
-    rgba(255, 128, 0, 0.6),
-    rgba(255, 0, 128, 0.6),
-    rgba(0, 128, 255, 0.6)
-  );
+  background: conic-gradient(from 0deg,
+      rgba(0, 128, 255, 0.6),
+      rgba(0, 255, 128, 0.6),
+      rgba(255, 128, 0, 0.6),
+      rgba(255, 0, 128, 0.6),
+      rgba(0, 128, 255, 0.6));
   z-index: -1;
   animation: rotateBorder 2s linear infinite;
   border-radius: 50%;
@@ -854,6 +881,7 @@ button:focus {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -870,15 +898,17 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 #tsparticles {
   pointer-events: none;
 }
 
 /* Custom radio button css */
 /* Custom styles for radio buttons */
-.form-check-input:checked{
+.form-check-input:checked {
   background-color: var(--imp-text-color) !important;
-  border-color: var(--imp-text-color) !important;;
+  border-color: var(--imp-text-color) !important;
+  ;
 }
 
 /* Guide */
@@ -886,21 +916,78 @@ button:focus {
   width: 100%;
   height: 75vh;
   margin-top: 100px;
-  border: "none"
+  border: none;
 }
 
 .iFramePage {
   width: 50%;
   height: 100%;
-  border: "none",
+  border: none;
 }
 
 @media (max-width: 767px) {
   .iFramePage {
     width: 100%;
   }
-  .guideSection{
-    margin-top: 120px;
-    height: 90vh;
+
+  .guide-logo {
+    display: none;
   }
+
+  /* Resonsive for sidebar to button  */
+  .guideSection {
+    position: relative !important;
+    margin-top: 72px !important;
+  }
+
+  .top-menu-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    background-color: transparent !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .chips-container button {
+    border-radius: 20px !important;
+    border: none;
+    margin: 5px !important;
+    color: white;
+    background-color: transparent;
+  }
+
+  :where(.css-dev-only-do-not-override-1okl62o).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background: #934cce5e;
+    color: white;
+  }
+}
+
+/* Ant Sidebar */
+.custom-menu .ant-menu-item {
+  color: white;
+  /* Default text color */
+}
+
+.custom-menu .ant-menu-item:hover {
+  color: coral
+    /* Hover state color */
+}
+
+.custom-menu .ant-menu-item-selected {
+  color: white;
+  /* Selected item color */
+  background-color: #934cce5e;
+}
+
+.ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover {
+  color: coral
+}
+
+.custom-menu .ant-menu-item a {
+  color: inherit;
+  /* Ensure links inherit the color */
 }
