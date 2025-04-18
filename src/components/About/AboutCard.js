@@ -1,21 +1,30 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import AboutStepper from "./AboutStepper";
+import { useTranslation } from "react-i18next";
 
 function AboutCard(props) {
-  const { name , address, designation, company, qualification , college,hobby} = props;
+  const { name , address, designation, company, qualification , college,hobby , education} = props;
+  const { t } = useTranslation();
+  
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="highlight-text"> {name} </span>
+            I'm <span className="highlight-text"> {name} </span>
             from {address}
             <br />
             I am currently working as a {designation} at {company}.
             <br />
-            I have completed my {qualification} at {college}.
-            <br />
+            <h1 style={{ textAlign: "center", fontSize: "1.6em", paddingBottom: "20px", paddingTop:"20px" }}
+              dangerouslySetInnerHTML={{
+                __html: t("about.heading4"),
+              }}>
+            </h1>
+            <AboutStepper education={education} />
+            {/* I have completed my {qualification} at {college}. */}
             <br />
             Apart from coding, some other activities that I love to do!
           </p>

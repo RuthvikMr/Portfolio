@@ -1,11 +1,25 @@
 {
     "user_bio": {
         "full_name": "Ruthvik M R",
-        "address":"Mysuru, India.",
+        "address":"Mysuru, Karnataka.",
         "designation":"Software Engineer",
         "company":"Knowledge Lens: A Rockwell Automation Company",
         "qualification":"Master of Computer Application (MCA)",
         "college_name":"Amrita Vishwa Vidyapeetham, Mysuru campus",
+        "education":[
+            {
+                "title": "10th - S.T Thomas High School - Percentage: 77.60%",
+                "description": "2014 - 2015"
+            },
+            {
+                "title": "12TH - Sankalpa - Percentage: 71.16%",
+                "description": "2015 - 2017"
+            },
+            {
+                "title": "MCA - Amrita Vishwa Vidyapeetham - CGPA: 6.9",
+                "description": "2020 - 2022"
+            }
+    ],
         "hobby":[
             "Playing Cricket",
             "Cooking",
@@ -13,10 +27,10 @@
         ],
         "passing_message": [
             "{ Front End Developer }",
-            "With 3 years of experience",
+            "With 3+ years of experience",
             "At Knowledge Lens"
         ],
-        "yearOfExperience":"3",
+        "yearOfExperience":"3+",
         "contact":[
             {
                 "link":"https://www.instagram.com/ruthvikmr417/",

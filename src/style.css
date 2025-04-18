@@ -991,3 +991,22 @@ button:focus {
   color: inherit;
   /* Ensure links inherit the color */
 }
+/* Stepper CSS */
+.ant-steps-item-title{
+  color: var(--imp-text-color) !important;
+}
+.ant-steps-item-description{
+  color: white !important;
+}
+.ant-steps-item-tail::after{
+  background-color: coral !important;
+}
+.ant-steps-item-title::after{
+  background-color: coral !important;
+}
+.ant-steps-icon{
+  color: var(--imp-text-color) !important;
+}
+.ant-steps-item-icon{
+  background-color: transparent !important;
+}
