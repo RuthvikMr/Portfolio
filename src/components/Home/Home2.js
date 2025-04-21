@@ -13,9 +13,11 @@ import { Zoom } from "react-awesome-reveal";
 import Tilt from "react-parallax-tilt";
 
 import Contact from "../Contact/Contact";
+import { useNavigate } from "react-router-dom";
 
 function Home2(props) {
   const { contact, workExp} = props;
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const getIcons = ( name ) =>{
     switch (name.toLowerCase()) {
@@ -72,7 +74,9 @@ function Home2(props) {
               </i>
               &nbsp; like
               <i>
-                <b className="highlight-text"> React.js and Ionic</b>
+              <b className="highlight-text"> React.js and Ionic</b>
+              <br/>
+              <b className="purple"><a onClick={() => navigate('/about')}>Know More...</a></b>
               </i>
             </p>
           </Col>

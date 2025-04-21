@@ -41,7 +41,8 @@
     "about": {
       "heading1": "<strong style='color:purple'>என்னை பற்றி அறிக</strong>",
       "heading2": "தொழில்முறை <strong style='color:purple'>நிறுவனங்கள்</strong>",
-      "heading3": "<strong style='color:purple'>கருவிகள்</strong> நான் பயன்படுத்துகிறேன்"
+      "heading3": "<strong style='color:purple'>கருவிகள்</strong> நான் பயன்படுத்துகிறேன்",
+      "heading4": "கல்வி <strong style='color:purple'>பயணம்</strong>"
     },
     "welcomeMessage": "எங்கள் இணையதளத்திற்கு வரவேற்கிறோம்!"
   }
