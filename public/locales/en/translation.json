@@ -41,7 +41,8 @@
   "about":{
     "heading1":"Know About <strong style='color:purple'>Me</strong>",
     "heading2":"Professional <strong style='color:purple'>Skillset </strong>",
-    "heading3":"<strong style='color:purple'>Tools</strong> I use"
+    "heading3":"<strong style='color:purple'>Tools</strong> I use",
+    "heading4":"Qualification <strong style='color:purple'>Journey</strong>"
   },
   "welcomeMessage": "Welcome to our website!"
 }

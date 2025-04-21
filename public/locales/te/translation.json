@@ -41,7 +41,8 @@
   "about": {
     "heading1": "<strong style='color:purple'>నా గురించి</strong> తెలుసుకోండి",
     "heading2": "వృత్తిపరమైన <strong style='color:purple'>నైపుణ్యాలు</strong>",
-    "heading3": "<strong style='color:purple'>పరికరాలు</strong> నేను ఉపయోగిస్తాను"
+    "heading3": "<strong style='color:purple'>పరికరాలు</strong> నేను ఉపయోగిస్తాను",
+    "heading4": "విద్యా <strong style='color:purple'>ప్రయాణం</strong>"
   },
   "welcomeMessage": "మా వెబ్‌సైట్‌కి స్వ!"
 }

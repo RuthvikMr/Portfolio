@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import { Bounce, Zoom } from "react-awesome-reveal";
 
 function About(props) {
-  const { tools,skills,name,address, designation,company ,qualification,college,hobby } = props;
+  const { tools,skills,name,address, designation,company ,qualification,college,hobby,education } = props;
   const { t } = useTranslation();
   return (
     <Container fluid className="about-section">
@@ -41,6 +41,7 @@ function About(props) {
             qualification={qualification}
             college={college}
             hobby={hobby}
+            education={education}
             />
             </Bounce>
           </Col>

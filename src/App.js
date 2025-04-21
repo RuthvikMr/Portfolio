@@ -56,6 +56,7 @@ function App() {
           qualification={User.user_bio.qualification}
           college={User.user_bio.college_name}
           hobby={User.user_bio.hobby}
+          education={User.user_bio.education}
           />} />
           <Route path="/resume" element={<Resume file={User.resumeLink} />} />
           <Route path="/news" element={<News/>} />

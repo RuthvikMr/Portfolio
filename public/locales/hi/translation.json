@@ -41,7 +41,8 @@
     "about": {
       "heading1": "<strong style='color:purple'>मुझे</strong> जानिए",
       "heading2": "व्यावसायिक <strong style='color:purple'>कौशल</strong>",
-      "heading3": "<strong style='color:purple'>उपकरण</strong> मैं उपयोग करता हूं"
+      "heading3": "<strong style='color:purple'>उपकरण</strong> मैं उपयोग करता हूं",
+      "heading4":"शिक्षा <strong style='color:purple'>यात्रा</strong>"
     },
     "welcomeMessage": "हमारी वेबसाइट पर आपका स्वागत है!"
   }
