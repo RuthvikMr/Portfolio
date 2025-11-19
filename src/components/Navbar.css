@@ -1,0 +1,5 @@
+.navbar .nav-link.active {
+  font-weight: bold;
+  border-bottom: 5px solid coral !important;
+  border-radius: 0 0 4px 4px;
+}
