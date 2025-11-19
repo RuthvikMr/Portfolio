@@ -193,7 +193,8 @@ button:focus {
   z-index: 1;
 }
 
-.navbar-nav .nav-item a::after {
+/* Nav Bar Hover */
+/* .navbar-nav .nav-item a::after {
   content: "";
   position: relative;
   display: block;
@@ -205,7 +206,7 @@ button:focus {
   left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;
-}
+} */
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
@@ -310,13 +311,13 @@ button:focus {
 
 .Typewriter__wrapper {
   font-size: 2.7em !important;
-  color: #be6adf !important;
+  color: coral !important;
   font-weight: 600 !important;
 }
 
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: coral !important;
 }
 
 @media (max-width: 767px) {
@@ -1010,3 +1011,7 @@ button:focus {
 .ant-steps-item-icon{
   background-color: transparent !important;
 }
+
+/*P2 v4 CSS /*
+/* Main Background */
+/* background: "linear-gradient(180deg, #0f0c29, #302b63, #24243e)", */
