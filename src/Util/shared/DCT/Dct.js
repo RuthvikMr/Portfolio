@@ -6,6 +6,7 @@ import * as Icons from "react-icons/bi";
 import * as DiIcons from "react-icons/di";
 import * as SiIcons from "react-icons/si";
 import { Roll, Rotate, Slide } from "react-awesome-reveal";
+import './Dct.css';
 
 
 export default function DynamicContents({ type, tabData, sharedComponent = false, animate = true }) {
@@ -63,10 +64,11 @@ export default function DynamicContents({ type, tabData, sharedComponent = false
 
     const tabItem = (index, tabs) => {
         return (
-            <Nav.Item id={index} key={index} className="text-center">
+            <Nav.Item id={index} key={index} className="text-center dct-nav-item">
                 <Nav.Link
                     eventKey={tabs?.key}
                     style={tabStyle(activeKey === tabs?.key)}
+                    className="dct-nav-link"
                 >
                     {tabs?.icon && tabs?.iconSettings?.package === 'bi' ? (
                         <>
@@ -98,9 +100,9 @@ export default function DynamicContents({ type, tabData, sharedComponent = false
             {type === 'tab' && tabData?.data?.length > 0 ? (<>
                 {/* Tabs */}
                 <Tab.Container activeKey={activeKey} id="tab_container" onSelect={(k) => onTabSelect(k)}>
-                    <Row className="justify-content-center mb-5" style={{ gap: "18px" }}>
+                    <Row className="justify-content-center mb-5 dct-tabs-row" style={{ gap: "18px" }}>
                         {tabData?.tabs.map((tabs, index) => (
-                            <Col key={index}>
+                            <Col key={index} className="dct-tab-col">
                                 {!animate ? (
                                     <>
                                         {tabItem(index, tabs)}
@@ -119,14 +121,14 @@ export default function DynamicContents({ type, tabData, sharedComponent = false
                         <>
                             <Tab.Pane eventKey={activeKey}>
                                 {type === 'tab' && !sharedComponent && tabData?.data?.length > 0 ? (
-                                    <Row className="g-4">
+                                    <Row className="g-4 dct-cards-row">
                                         {tabData.data
                                             .filter((item) => item.key === activeKey)
                                             .map((items, index) => (
-                                                <Col md={4} sm={6} xs={12} key={items.key + index} style={{ width: items?.style?.width ?? null, height: items?.style?.height ?? null }}>
+                                                <Col md={4} sm={6} xs={12} key={items.key + index} className="dct-card-col" style={{ width: items?.style?.width ?? null, height: items?.style?.height ?? null }}>
                                                     <Roll triggerOnce>
                                                         <Card
-                                                            className="p-3 h-100 text-center"
+                                                            className="p-3 h-100 text-center dct-card"
                                                             style={cardStyle}
                                                             onMouseEnter={cardHover}
                                                             onMouseLeave={cardLeave}

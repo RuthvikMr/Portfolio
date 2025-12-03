@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import emailjs from 'emailjs-com';
 import { FiSend } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
+import './Contact.css';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -44,6 +45,7 @@ function Contact() {
                     value={formData.senderName}
                     onChange={handleChange}
                     required
+                    className="contact-form-input"
                 />
             </Form.Group>
 
@@ -55,6 +57,7 @@ function Contact() {
                     value={formData.sender_email}
                     onChange={handleChange}
                     required
+                    className="contact-form-input"
                 />
             </Form.Group>
 
@@ -67,29 +70,14 @@ function Contact() {
                     onChange={handleChange}
                     rows={4}
                     required
+                    className="contact-form-textarea"
                 />
             </Form.Group>
 
-            <Button variant="primary" type="submit"
-                style={{
-                    background: "linear-gradient(to right, #a855f7, #6d28d9)",
-                    border: "none",
-                    padding: "10px 25px",
-                    fontWeight: "500",
-                    borderRadius: "30px",
-                    boxShadow: "0 0 15px rgba(168,85,247,0.5)",
-                    transition: "all 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.05)";
-                    e.currentTarget.style.boxShadow =
-                        "0 0 25px rgba(168,85,247,0.8)";
-                }}
-                onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                    e.currentTarget.style.boxShadow =
-                        "0 0 15px rgba(168,85,247,0.5)";
-                }}
+            <Button 
+                variant="primary" 
+                type="submit"
+                className="contact-submit-btn"
             >
                 {t('messages.submit')} &nbsp;&nbsp;
                 <FiSend />

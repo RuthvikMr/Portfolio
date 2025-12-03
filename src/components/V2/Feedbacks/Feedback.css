@@ -1,0 +1,305 @@
+/* Feedback Form Card */
+.feedback-form-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(168, 85, 247, 0.2) !important;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.15);
+    transition: all 0.3s ease;
+}
+
+.feedback-form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(168, 85, 247, 0.25);
+}
+
+/* Feedback Input Fields */
+.feedback-input {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
+    color: #fff !important;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.feedback-input:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: #a855f7 !important;
+    box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25) !important;
+    color: #fff !important;
+}
+
+.feedback-input::placeholder {
+    color: #a0a0a0 !important;
+}
+
+/* Rating Container */
+.rating-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 8px;
+}
+
+/* Submit Button */
+.feedback-submit-btn {
+    background: linear-gradient(to right, #a855f7, #6d28d9) !important;
+    border: none !important;
+    padding: 12px 35px;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.feedback-submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.8);
+}
+
+/* Feedback Card */
+.feedback-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(168, 85, 247, 0.15) !important;
+    border-left: 4px solid #a855f7 !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(168, 85, 247, 0.2);
+    border-left-color: #6366f1 !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Card Body Styling */
+.feedback-card .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Quote Mark */
+.feedback-quote-mark {
+    font-size: 3rem;
+    line-height: 1;
+    color: rgba(168, 85, 247, 0.2);
+    font-family: Georgia, serif;
+    margin-bottom: -15px;
+    margin-top: -5px;
+}
+
+/* Feedback Message */
+.feedback-message {
+    color: #e8e8e8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* Read More Button */
+.feedback-read-more {
+    color: #a855f7 !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    padding: 0 !important;
+    margin-bottom: 15px;
+    text-align: left;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.feedback-read-more:hover {
+    color: #c084fc !important;
+    transform: translateX(5px);
+}
+
+.feedback-read-more:focus {
+    box-shadow: none !important;
+}
+
+/* Author Section */
+.feedback-author-section {
+    margin-top: auto;
+}
+
+.feedback-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-name {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.feedback-role {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+/* Meta Information */
+.feedback-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedback-separator {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.feedback-date {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Feedback Badge */
+.feedback-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.feedback-badge.lead {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.feedback-badge.manager {
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feedback-card {
+        min-height: 280px;
+    }
+
+    .feedback-card .card-body {
+        padding: 18px;
+    }
+
+    .feedback-quote-mark {
+        font-size: 2.5rem;
+        margin-bottom: -12px;
+        margin-top: -5px;
+    }
+
+    .feedback-name {
+        font-size: 1rem;
+    }
+
+    .feedback-role {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    .feedback-message {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+
+    .feedback-date {
+        font-size: 0.75rem;
+    }
+
+    .feedback-meta {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .feedback-badge {
+        font-size: 0.65rem;
+        padding: 3px 10px;
+    }
+
+    .feedback-read-more {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+
+    .feedback-separator {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback-card {
+        min-height: 260px;
+    }
+
+    .feedback-card .card-body {
+        padding: 15px;
+    }
+
+    .feedback-quote-mark {
+        font-size: 2rem;
+        margin-bottom: -10px;
+    }
+
+    .feedback-message {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .feedback-name {
+        font-size: 0.95rem;
+    }
+
+    .feedback-role {
+        font-size: 0.8rem;
+    }
+
+    .feedback-badge {
+        font-size: 0.6rem;
+        padding: 2px 8px;
+    }
+
+    .feedback-date {
+        font-size: 0.7rem;
+    }
+}
+
+/* Select Dropdown */
+.feedback-input option {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+/* Textarea */
+.feedback-input[as="textarea"] {
+    resize: vertical;
+    min-height: 100px;
+}
