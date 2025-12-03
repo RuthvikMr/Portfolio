@@ -201,14 +201,14 @@ function AboutV2(props) {
 
                 <Timeline
                     mode="alternate"
-                    className="p-5"
+                    className="p-5 timeline-section"
                     items={educationData.map((item, index) => ({
                         dot: item.icon,
                         children: (
                             <Slide direction={index % 2 === 0 ? "left" : "right"} triggerOnce>
                                 <Card
                                     key={index}
-                                    className="shadow-lg border-0 p-4"
+                                    className="shadow-lg border-0 p-4 timeline-card"
                                     style={{
                                         borderRadius: "20px",
                                         background: "rgba(255, 255, 255, 0.05)",

@@ -14,12 +14,13 @@ import contactSvg from "../../../Assets/contact.svg";
 import Contact from "../Contact/Contact.js";
 import { AiFillGithub, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Feedback from "../Feedbacks/Feedback.js";
 
 
-export default function HomeV2(){
-      const { t } = useTranslation();
-      const { Title} = Typography;
-      const badgeSkills = ['Javascript','Angular','React JS','Ionic'];
+export default function HomeV2() {
+    const { t } = useTranslation();
+    const { Title } = Typography;
+    const badgeSkills = ['Javascript', 'Angular', 'React JS', 'Ionic'];
     const getIcons = (name) => {
         switch (name.toLowerCase()) {
             case "instagram":
@@ -52,7 +53,7 @@ export default function HomeV2(){
             "name": "Github"
         }
     ]
-    
+
     return (
         <section style={{
             background: "linear-gradient(180deg, #0f0c29, #302b63, #24243e)",
@@ -62,56 +63,56 @@ export default function HomeV2(){
             <Container id="home">
                 <Particle />
                 <Container className="home-content">
-                    <Row style={{padding:'60px 0'}}>
+                    <Row style={{ padding: '60px 0' }}>
                         <Col md={7} className="home-header">
-                        <Slide triggerOnce>
-                           <Title
-                                className="text-start"
-                                style={{
-                                    textTransform: "uppercase",
-                                    fontSize: "1.5rem",
-                                    fontWeight: "800",
-                                    fontFamily: "'Poppins', sans-serif",
-                                    WebkitBackgroundClip: "text",
-                                    color: "white",
-                                    marginBottom: "0px",
-                                }}
-                            >
-                                I'm Ruthvik M R
-                            </Title>
-                        </Slide>
-                        <Slide triggerOnce delay={500}>
-                             <Title
-                                className="text-start mt-0"
-                                style={{
-                                    textTransform: "uppercase",
-                                    fontSize: "3.5rem",
-                                    fontWeight: "800",
-                                    fontFamily: "'Poppins', sans-serif",
-                                    WebkitBackgroundClip: "text",
-                                    color: "white",
-                                    marginBottom: "0px",
-                                }}
-                            >
-                                Frontend
-                            </Title>
-                            <Title
-                                className="text-start mt-0"
-                                style={{
-                                    textTransform: "uppercase",
-                                    fontSize: "3.5rem",
-                                    fontWeight: "800",
-                                    fontFamily: "'Poppins', sans-serif",
-                                    WebkitBackgroundClip: "text",
-                                    color: "#a855f7",
-                                    marginBottom: "0px",
-                                }}
-                            >
-                                Developer
-                            </Title>
-                        </Slide>
-                            <Type typeWriter={['3.5 Years of Experience at','Rockwell Automation']} />
-                            <div>
+                            <Slide triggerOnce>
+                                <Title
+                                    className="text-start"
+                                    style={{
+                                        textTransform: "uppercase",
+                                        fontSize: "1.5rem",
+                                        fontWeight: "800",
+                                        fontFamily: "'Poppins', sans-serif",
+                                        WebkitBackgroundClip: "text",
+                                        color: "white",
+                                        marginBottom: "0px",
+                                    }}
+                                >
+                                    I'm Ruthvik M R
+                                </Title>
+                            </Slide>
+                            <Slide triggerOnce delay={500}>
+                                <Title
+                                    className="text-start mt-0"
+                                    style={{
+                                        textTransform: "uppercase",
+                                        fontSize: "3.5rem",
+                                        fontWeight: "800",
+                                        fontFamily: "'Poppins', sans-serif",
+                                        WebkitBackgroundClip: "text",
+                                        color: "white",
+                                        marginBottom: "0px",
+                                    }}
+                                >
+                                    Frontend
+                                </Title>
+                                <Title
+                                    className="text-start mt-0"
+                                    style={{
+                                        textTransform: "uppercase",
+                                        fontSize: "3.5rem",
+                                        fontWeight: "800",
+                                        fontFamily: "'Poppins', sans-serif",
+                                        WebkitBackgroundClip: "text",
+                                        color: "#a855f7",
+                                        marginBottom: "0px",
+                                    }}
+                                >
+                                    Developer
+                                </Title>
+                            </Slide>
+                            <Type typeWriter={['3.5 Years of Experience at', 'Rockwell Automation']} />
+                            <div className="badge-skills-container">
                                 <Row>
                                     {badgeSkills && badgeSkills.length > 0 && badgeSkills.map((item, i) => (
                                         <Col className="col-auto" key={i}>
@@ -140,6 +141,14 @@ export default function HomeV2(){
                     <Row>
                         <Workfolio />
                     </Row>
+                    {/* Feedback Section  */}
+                    <Row>
+                        <Col md={12}>
+                            <Feedback />
+                        </Col>
+                    </Row>
+
+                    {/* Contact Section */}
                     <Row>
                         <Col md={4} className="home-about-social">
                             <Zoom triggerOnce='true'>

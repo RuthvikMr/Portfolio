@@ -1,0 +1,81 @@
+/* Contact Form Styling */
+.contact-form-input {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
+    color: #fff !important;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-form-input:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: #a855f7 !important;
+    box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25) !important;
+    color: #fff !important;
+}
+
+.contact-form-input::placeholder {
+    color: #a0a0a0 !important;
+}
+
+/* Textarea specific styling */
+.contact-form-textarea {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important;
+    color: #fff !important;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form-textarea:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: #a855f7 !important;
+    box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25) !important;
+    color: #fff !important;
+}
+
+.contact-form-textarea::placeholder {
+    color: #a0a0a0 !important;
+}
+
+/* Submit Button */
+.contact-submit-btn {
+    background: linear-gradient(to right, #a855f7, #6d28d9) !important;
+    border: none !important;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    color: #fff !important;
+}
+
+.contact-submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.8);
+    background: linear-gradient(to right, #9333ea, #5b21b6) !important;
+}
+
+.contact-submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-input,
+    .contact-form-textarea {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+
+    .contact-submit-btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+}
