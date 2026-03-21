@@ -1,0 +1,31 @@
+.welcome-info {
+    margin: auto;
+    /* padding-inline-end: 60px; */
+}
+
+
+.welcome-section {
+    position: relative;
+    background-image: linear-gradient(to bottom left,
+            rgba(17, 16, 16, 0.678),
+            rgba(12, 10, 22, 0.863)), url(../../../Assets/home-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px !important;
+    padding-top: 10px !important;
+}
+
+.welcome-content {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+}
+.welcome-title{
+    font-size: 56px;
+    font-family: fantasy;
+}
+@media (max-width: 767px) {
+    .welcome-info{
+        padding: 14px;
+    }
+}
