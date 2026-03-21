@@ -3,15 +3,16 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link , useLocation} from "react-router-dom";
 import { TbLanguageHiragana } from "react-icons/tb";
+import { MdInsights } from "react-icons/md";
 import { BiBookReader } from "react-icons/bi";
 import Form from 'react-bootstrap/Form';
 import  languageJson  from '../Assets/json/languages.json'
 import { useTranslation } from 'react-i18next';
+import "./Navbar.css";
 import {
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 import { FaRegNewspaper } from "react-icons/fa";
@@ -24,6 +25,7 @@ function NavBar() {
   const [selectedLang, setSelectedLang] = useState(null);
   const [isOpen,setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   const handleChange = (lang) => {
     localStorage.setItem('language',JSON.stringify(lang))
@@ -82,13 +84,23 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+            {/* V1 HOME */}
+            {/* <Nav.Item>
+              <Nav.Link as={Link} to="/home" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
+              </Nav.Link>
+            </Nav.Item> */}
+
+            {/* V2 HOME */}
+            <Nav.Item>
+              <Nav.Link as={Link} to="/v2/home" onClick={() => updateExpanded(false)}
+              className={location.pathname.startsWith("/v2/home") ? "active" : ""}>
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* V1 Projects */}
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -99,38 +111,67 @@ function NavBar() {
                 />{" "}
                 {t('navbar.projects')}
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
-            <Nav.Item>
+            {/* V1 News  */}
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/news"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname.startsWith("/news") ? "active" : ""}
               >
                 <FaRegNewspaper
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 {t('navbar.news')}
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
-            <Nav.Item>
+            {/* V1 Guide  */}
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/guide"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname.startsWith("/guide") ? "active" : ""}
               >
                 <BiBookReader style={{ marginBottom: "2px" }} /> {t('navbar.guide')}
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
-            <Nav.Item>
+              {/* V1 About */}
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.about')}
+              </Nav.Link>
+            </Nav.Item> */}
+
+            {/* V2 About  */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/v2/about"
+                onClick={() => updateExpanded(false)}
+                className={location.pathname.startsWith("/v2/about") ? "active" : ""}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About 
+              </Nav.Link>
+            </Nav.Item>
+
+            {/* V2 Insights  */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/v2/insight"
+                onClick={() => updateExpanded(false)}
+                className={location.pathname.startsWith("/v2/insight") ? "active" : ""}
+              >
+                <MdInsights style={{ marginBottom: "2px" }} /> Insights
               </Nav.Link>
             </Nav.Item>
 

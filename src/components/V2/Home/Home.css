@@ -1,0 +1,15 @@
+.home-content {
+  padding: 3rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.badge-skills-container {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .badge-skills-container {
+    margin-top: 37px;
+  }
+}

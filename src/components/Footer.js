@@ -49,6 +49,7 @@ function Footer(props) {
         </Col>
         <Col md="4" className="footer-copywright">
           <h3><FaCodeBranch/> {config.version}{currentDate}</h3>
+          <h5>{config.appVersion}</h5>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
